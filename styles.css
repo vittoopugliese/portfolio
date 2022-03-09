@@ -102,10 +102,10 @@ a:-webkit-any-link {
     background-color: var(--secondary);
 }
 
-#me{
+#bg{
     z-index: 1 !important;
 }
-#me::after {
+#bg::after {
     background-image: -moz-linear-gradient(top, rgba(25, 24, 32, 0.92), rgba(23, 24, 32, 0.95)), url(files/bg-code.jpg);;
     background-image: -webkit-linear-gradient(top, rgba(25, 24, 32, 0.92), rgba(23, 24, 32, 0.95)), url(files/bg-code.jpg);;
     background-image: -ms-linear-gradient(top, rgba(25, 24, 32, 0.92), rgba(23, 24, 32, 0.95)), url(files/bg-code.jpg);;
@@ -149,4 +149,7 @@ h3{
     font-size: 22px;
     line-height: 1.5em;
     white-space: nowrap;
+}
+#knowledge-content{
+
 }
