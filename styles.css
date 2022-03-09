@@ -108,7 +108,7 @@ a:-webkit-any-link {
 #me::after {
     background-image: -moz-linear-gradient(top, rgba(25, 24, 32, 0.92), rgba(23, 24, 32, 0.95)), url(files/bg-code.jpg);;
     background-image: -webkit-linear-gradient(top, rgba(25, 24, 32, 0.92), rgba(23, 24, 32, 0.95)), url(files/bg-code.jpg);;
-    background-image: -ms-linear-gradient(top, rgba(25, 24, 32, 0.92), rgba(23, 24, 32, 0.95), url(files/bg-code.jpg);;
+    background-image: -ms-linear-gradient(top, rgba(25, 24, 32, 0.92), rgba(23, 24, 32, 0.95)), url(files/bg-code.jpg);;
     background-image: linear-gradient(top, rgba(25, 24, 32, 0.92), rgba(23, 24, 32, 0.95)), url(files/bg-code.jpg);;
     content: '';
     display: block;
