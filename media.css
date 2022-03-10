@@ -35,7 +35,7 @@
 
 @media (min-width: 920px ){
     nav{
-        background-color:rgba(24, 24, 32, 0.54);
+        background-color:rgba(24, 24, 32, 0.6);
     }
     #nav-name{
         font-size: 1.9em;
@@ -57,6 +57,61 @@
     }
     h3{
         font-size: 28px;
+    }
+    #image img{
+        width: 264px !important;
+    }
+}
+/* chikito */
+@media (max-width: 550px ){
+    #toggle-button{
+        margin: 0 auto;
+    }
+    #image img{
+        width: 154px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 28px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    #grid-logo{
+        gap: 25px;
+        margin: 50px;
+    }
+    #logo img{
+        width: 100px;
+        height: 100px;
+    }
+}
+/* ultrachikito */
+@media (max-width: 370px ){
+    h2{
+        font-size: 26px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    h5{
+        font-size: 15px;
+    }
+    #grid-logo{
+        gap: 20px;
+        margin: 32px;
+    }
+    #logo img{
+        width: 80px;
+        height: 80px;
     }
 }
     
