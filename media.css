@@ -28,6 +28,9 @@
     #nav-links.active{
         display: flex;
     }
+    #info-content{
+        flex-direction: column; 
+    }
 }
 
 @media (min-width: 920px ){
@@ -42,7 +45,11 @@
         padding: 1vw;
     }
     #info-content{
+        display: flex;
+        justify-content: center;
         flex-direction: row;
+        text-align: center;
+        vertical-align: middle;
         gap: 25px;
     }
     h2{
