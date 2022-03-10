@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Rubik:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Rubik:ital,wght@1,300&display=swap');
-*{padding: 0;margin: 0;box-sizing: border-box;outline:none;font-family: 'Fredoka', sans-serif;font-weight: 500;scroll-behavior: smooth !important;}
+*{padding: 0;margin: 0;box-sizing: border-box;outline:none;font-family: 'Fredoka', sans-serif;font-weight: 500;} html {scroll-behavior: smooth;}
 *::selection{background-color: var(--secondary);color: var(--main);font-weight: 900 !important;}
 a{text-decoration: none !important;}
 *, *:before, *:after {box-sizing: inherit;}
@@ -251,10 +251,10 @@ h5{
 }
 #logo:not(hover){
     opacity: 100;
-    transition: opacity 2s ease-in, opacity 2s ease-out;
+    transition: opacity 1.5s ease-in, opacity 1.5s ease-out;
 }
 #logo-text{
-    opacity: 100 !important;
+    opacity: 100 ;
     transition: opacity 4s ease in, opacity 4s ease-out;
     color: var(--light);
     display: none;

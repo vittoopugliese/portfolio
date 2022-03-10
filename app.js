@@ -11,16 +11,11 @@ toggleNav.addEventListener('click', () => {
 const logo = document.querySelectorAll('#logo')
 const logoText = document.querySelectorAll('#logo-text')
 
-logo[0].onmouseover = function(){
-    logoText[0].style.display = 'flex'
-};
-logo[0].onmouseleave = function(){
-    logoText[0].style.display = 'none'
-};
-
-logo[1].onmouseover = function(){
-    logoText[1].style.display = 'flex'
-};
-logo[1].onmouseleave = function(){
-    logoText[1].style.display = 'none'
-};
+for (let i=0; i<logo.length; i++){
+    logo[i].addEventListener('mouseover', function(){
+        logoText[i].style.display = 'flex'
+    });
+    logo[i].addEventListener('mouseleave', function(){
+        logoText[i].style.display = 'none'
+    });
+}
