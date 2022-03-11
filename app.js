@@ -1,6 +1,6 @@
-// window.onbeforeunload = function () {
-//     window.scrollTo(0, 0);
-// }
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
 
 const toggleNav = document.querySelectorAll('#toggle-button')[0]
 const navLinks = document.querySelectorAll('#nav-links')[0]
