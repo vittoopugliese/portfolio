@@ -147,22 +147,21 @@ a:-webkit-any-link {
     background-color: var(--light);
     font-weight: 900;
     font-family: 'Rubik', sans-serif;font-weight: 800;
-}.vp:hover{
+    filter: drop-shadow(-1px 1px 8px rgba(135, 136, 150, 0.781));
+}
+.vp:hover{
     color: rgb(248, 209, 124);
     background-color: var(--main);
     cursor:pointer;
     transition: color 0.5s ease-in-out, color 0.2s ease-in-out;
     transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
-    border-radius: 25px;
-    transition: border-radius 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 .vp:not(hover){
     color: var(--grey);
     background-color: var(--light);
     transition: color 0.5s ease-in-out, color 0.2s ease-in-out;
     transition: background-color 0.54s ease-in-out, color 0.54s ease-in-out;
-    border-radius: 15px;
-    transition: border-radius 0.5s ease-in-out, color 0.5s ease-in-out;
+    border-radius: 10px;
 }
 #info-content{
     display: flex;
@@ -186,7 +185,15 @@ a:-webkit-any-link {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: -moz-none;
+
+    filter: drop-shadow(3px -1px 20px rgba(80, 80, 80, 0.781));
 }
+/* #image:hover{
+    margin-top: 38px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+} */
 h2{
     color: var(--light) !important;
     font-size: 40px;
@@ -216,6 +223,7 @@ h3{
     height: 3px;
     max-width: 40vw;
     width: 75%;
+    filter: drop-shadow(-1px 2px 7px rgba(255, 244, 141, 0.781));
 }
 h4{
     color: var(--secondary);
@@ -250,13 +258,13 @@ h5{
     user-select: none;
 }
 #logo:hover{
-    opacity: 0.15;
-    transition: opacity 0.5s ease-in, opacity 0.5s ease-out;
+    opacity: 0.1;
+    transition: opacity 0.2s ease-in, opacity 0.2s ease-out;
     filter: drop-shadow(-5px 5px 30px rgb(197, 198, 226));
 }
 #logo:not(hover){
     opacity: 100;
-    transition: opacity 1.5s ease-in, opacity 1.5s ease-out;
+    transition: opacity 1.2s ease-in, opacity 1.2s ease-out;
 }
 #logo-text{
     opacity: 100 ;
@@ -268,6 +276,7 @@ h5{
     pointer-events: none;
     font-size: 17px;
     margin-bottom:54px;
+    user-select: none;
 }
 footer{
     display: flex;
@@ -289,6 +298,7 @@ footer{
 }
 #contact{
     text-align: center;
+    user-select: none;
 }
 #contact a{
     margin:10px 20px;

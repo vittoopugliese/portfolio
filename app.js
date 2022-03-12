@@ -18,11 +18,9 @@ class techno extends HTMLElement{
         this.description;
         this.img;
     }
-
     static get observedAttributes(){
         return ['name', 'description', 'img'];
     }
-
     attributeChangedCallback(nameAttr, oldValue, newValue){
         switch(nameAttr){
             case "name":
@@ -36,7 +34,6 @@ class techno extends HTMLElement{
             break;
         }
     }
-
     connectedCallback(){
         this.innerHTML = `
         <div id="logo-container">
