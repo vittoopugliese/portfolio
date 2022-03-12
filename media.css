@@ -40,7 +40,7 @@
 /* grande */
 @media (max-width: 1920px ){
     #center-wrapper{
-        width: 74vw;
+        width: 80vw;
         margin: 0 auto;
     }
     #logo-text{
@@ -81,16 +81,22 @@
         display: flex;
 
     }
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 28px;
+    }
     #info-content{
         flex-direction: column; 
     }
     #center-wrapper{
-        width: 90vw;
+        width: 85vw;
         margin: 0 auto;
     }
     #logo-text{
         max-width: 20%;
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom:45px;
     }
 }
@@ -124,17 +130,17 @@
         height: 100px;
     }
     #center-wrapper{
-        width: 60vw;
+        width: 70vw;
         margin: 0 auto;
     }
     #logo-text{
-        max-width: 26%;
-        font-size: 13px;
+        max-width: 25%;
+        font-size: 15px;
     }
 }
 
 /* ultrachikito */
-@media (max-width: 370px ){
+@media (max-width: 384px ){
     h2{
         font-size: 26px;
     }
@@ -158,10 +164,10 @@
     #center-wrapper{
         width: 84vw;
         margin: 0 auto;
-    }W
+    }
     #logo-text{
         max-width: 22%;
-        font-size: 80px;
+        font-size: 10px;
         margin-bottom:54px !important;
     }
 }

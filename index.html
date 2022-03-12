@@ -12,7 +12,7 @@
 </head>
 <body>
 <div id="wrapper">
-    <!-- Nav -->
+<!-- Nav -->
         <header>
                 <nav>
                     <h1 id="nav-name"><a href="index.html">My Sheet</a></h1>
@@ -32,10 +32,10 @@
                         </div>
                     </nav>
         </header>
-    <!-- Info -->
+<!-- Info -->
         <div id="bg"></div>
-        <section id="landing-wrapper">
-			<div id="info-content">
+        <div id="landing-wrapper">
+			<section id="info-content">
 				<header> 
 					<h2>Hola!<br>I am <a class="vp">Vittorio Pugliese </a></h2>
 					<h3>Web development and innovation apassionate.
@@ -44,16 +44,14 @@
 				</header>
 				<span id="image"><img src="files/avatar.png" alt="Avatar" draggable="false"></span>
                 <a id="arrow" href=""></a>
-			</div>
-        </section>
-    <!-- nftorio demostracion -->
-        <section id="nftorio-wrapper">
-            
-        </section>
-    <!-- content-wrapper -->
+			</section>
+        </div>
+            <!-- content-wrapper -->
     <div id="content-wrapper"> 
         <div id="center-wrapper">
-            <!-- Knowledge -->
+<!-- projects -->
+        <section id="projects"></section>
+<!-- Knowledge -->
         <section id="knowledge-content">
             <header> 
                 <h4>Knowledge</h4>
@@ -64,148 +62,65 @@
                 </h5>
             </header>
         </section>
-
         <section id="grid-logo">
-
-
+            <!-- logo -->
+            <tech-no name="HTML" description="Hypertext markup language, it gives structure to the page. This works with 'Tags'." img="files/logos/html.png"></tech-no>
 
             <!-- logo -->
-            <div id="logo-container">
-                <div id="logo">
-                    <img draggable="false"src="files/logos/html.png">
-                    <h5>HTML</h5>
-                </div>
-                <div id="logo-text">
-                    <p>Hypertext markup language, it gives structure to the web. This works with "Tags"</p>
-                </div>
-            </div>
+            <tech-no name="CSS" description="Responsible for giving <i>Style</i> to the page. This works whit classes" img="files/logos/css.png"></tech-no>
 
             <!-- logo -->
-            <div id="logo-container">
-                <div id="logo">
-                    <img draggable="false"src="files/logos/css.png">
-                    <h5>CSS</h5>
-                </div>
-                <div id="logo-text">
-                    <p>Responsible for giving <i>Style</i> to the page. This works whit "classes" and "id's".</p>
-                </div>
-            </div>
-
-            <!-- logo -->      
-            <div id="logo-container">
-                <div id="logo">
-                    <img draggable="false"src="files/logos/js.png">
-                    <h5>JavaScript</h5>
-                </div>
-                <div id="logo-text">
-                    <p>Text-based programming language, allows you to put logic onto web pages.</p>
-                </div>
-            </div>
+            <tech-no name="JavaScript" description="Programming language that allows you to put logic onto web pages." img="files/logos/js.png"></tech-no>
 
             <!-- logo -->
-            <div id="logo-container">
-                <div id="logo">
-                    <img draggable="false"src="files/logos/git.png">
-                    <h5>Git</h5>
-                </div>
-                <div id="logo-text">
-                    <p>Source code management tool. It's used to control the versions of the page.</p>
-                </div>
-            </div>
+            <tech-no name="Git" description="Source code management tool. It's used to control the versions of the page." img="files/logos/git.png"></tech-no>
 
             <!-- logo -->
-            <div id="logo-container">
-                <div id="logo">
-                    <img draggable="false"src="files/logos/bootstrap.png">
-                    <h5>Bootstrap</h5>
-                </div>
-                <div id="logo-text">
-                    <p>Front-end framework used to put styles on the page using only css classes.</p>
-                </div>
-            </div>
-
-            <!-- logo -->      
-            <div id="logo-container">
-                <div id="logo">
-                    <img draggable="false"src="files/logos/react.png">
-                    <h5>React JS</h5>
-                </div>
-                <div id="logo-text">
-                    <p>JavaScript library that's used for building user interfaces.</p>
-                </div>
-            </div>
+            <tech-no name="Bootstrap" description="Front-end framework used to put styles on the page using only css classes." img="files/logos/bootstrap.png"></tech-no>
 
             <!-- logo -->
-            <div id="logo-container">
-                <div id="logo">
-                    <img draggable="false"src="files/logos/firebase.png">
-                    <h5>Firebase</h5>
-                </div>
-                <div id="logo-text">
-                    <p>Application development software that enables developers to have a backend lol.</p>
-                </div>
-            </div>
+            <tech-no name="React JS" description="JavaScript library that's used for building user interfaces." img="files/logos/react.png"></tech-no>
 
             <!-- logo -->
-            <div id="logo-container">
-                <div id="logo">
-                    <img draggable="false"src="files/logos/tailwind.png">
-                    <h5>TailWind</h5>
-                </div>
-                <div id="logo-text">
-                    <p>CSS framework for building custom user interfaces and give style to the page.</p>
-                </div>
-            </div>
-
-            <!-- logo -->      
-            <div id="logo-container">
-                <div id="logo">
-                    <img draggable="false"src="files/logos/nodejs.png">
-                    <h5>Node JS</h5>
-                </div>
-                <div id="logo-text">
-                    <p>A JS runtime environment that allows JS to be run on the server-side.</p>
-                </div>
-            </div>
+            <tech-no name="Firebase" description="Application development software that enables frontends to have a backend without studing." img="files/logos/firebase.png"></tech-no>
 
             <!-- logo -->
-            <div id="logo-container">
-                <div id="logo">
-                    <img draggable="false"src="files/logos/ps.png">
-                    <h5>Photoshop</h5>
-                </div>
-                <div id="logo-text">
-                    <p>Adobe photo editing software.</p>
-                </div>
-            </div>
+            <tech-no name="TailWind" description="CSS framework for building custom user interfaces and give style to the page." img="files/logos/tailwind.png"></tech-no>
+      
+            <!-- logo -->
+            <tech-no name="Node JS" description="A JS runtime environment that allows JS to be run on the server-side." img="files/logos/nodejs.png"></tech-no>
 
             <!-- logo -->
-            <div id="logo-container">
-                <div id="logo">
-                    <img draggable="false"src="files/logos/sparkar.png">
-                    <h5>Spark AR</h5>
-                </div>
-                <div id="logo-text">
-                    <p>Aumented Reality platform that allows you to create AR effects and fiters for cameras.</p>
-                </div>
-            </div>
-
-            <!-- logo -->      
-            <div id="logo-container">
-                <div id="logo">
-                    <img draggable="false"src="files/logos/fl.png">
-                    <h5>FL Studio</h5>
-                </div>
-                <div id="logo-text">
-                    <p>"Formerly known as FruityLoops, is a music producer's dream."</p>
-                </div>
-            </div>
+            <tech-no name="Photoshop" description="Adobe photo editing software." img="files/logos/ps.png"></tech-no>
 
             <!-- logo -->
+            <tech-no name="Spark AR" description="Aumented Reality platform that allows you to create AR effects and fiters for cameras." img="files/logos/sparkar.png"></tech-no>
+
+            <!-- logo -->
+            <tech-no name="FL Studio" description="Formerly known as FruityLoops, is a music producer's dream." img="files/logos/fl.png"></tech-no>
+
         </section>
+        <div id="bar"></div>
         </div>
-    </div>
 
+<!-- certificates -->
+<section id="certificates-wrapper"></section>
+
+<!-- footer -->
+        <footer>
+            <div id="more-info">
+                <h5>Feel free to contact me and ask any question you have.</h5>
+            </div>
+            <div id="contact">
+                <a class="link-to" target="_blank" href="https://www.linkedin.com/in/vittorio-pugliese-920996231/"><img id="iso-1" src="files/svgs/livacio.svg" alt="linkedin profile"></a>
+                <a class="link-to" target="_blank" href="https://github.com/vittoopugliese"><img id="iso-2" src="files/svgs/gitvacio.svg" alt="github profile"></a>
+                <a class="link-to" target="_blank" href="https://www.google.com/search?q=mailto+doesnt+work%2C+my+mail+is+vittoopugliese%40gmail.com&client=ms-android-samsung&sxsrf=APq-WBu6-xbw_QbVwWjeNBF5G3m11kMVyw%3A1647053526339&ei=1gosYpKjFMTN1sQPla2S0AU&ved=0ahUKEwiS5vPCyL_2AhXEppUCHZWWBFoQ4dUDCA4&uact=5&oq=mailto+doesnt+work%2C+my+mail+is+vittoopugliese%40gmail.com&gs_lcp=Cgdnd3Mtd2l6EAM6BwgjELADECc6BAghEApKBAhBGAFKBAhGGABQuxxYhDFg91loAnAAeACAAXGIAdQDkgEDMi4zmAEAoAEByAEBwAEB&sclient=gws-wiz"><img id="iso-3" src="files/svgs/gmailvacio.svg" alt="mailto"></a>
+                <a class="link-to" target="_blank" href="https://api.whatsapp.com/send/?phone=+541178310432"><img id="iso-4" src="files/svgs/wspvacio.svg" alt="whatsapp number"></a>
+            </div>
+            <h3><i>Web made by <a target="_blank" href="https://instagram.com/vittoopugliese">Vittorio Pugliese</a> with pure JavaScript.</i></h3>
+        </footer>
+        
+    </div>
 </div>
 </body>
 <script src="app.js"></script>
