@@ -1,7 +1,8 @@
-// reload to 0:0
-// window.onbeforeunload = function () {
-//     window.scrollTo(0, 0);
-// }
+//reload to 0:0
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
 
 // toggle nav
 const toggleNav = document.querySelectorAll('#toggle-button')[0]
@@ -95,3 +96,108 @@ iso4.addEventListener('mouseover', function(){
 iso4.addEventListener('mouseleave', function(){
     iso4.src = 'files/svgs/wspvacio.svg'
 });
+
+
+const certificateGrid = document.querySelector('#certificate-grid')
+const loadMore = document.querySelector('#load-more')
+const undoText = document.querySelector('#undo')
+
+function loadMoreCertificates() {
+    certificateGrid.innerHTML = `
+    <div id="center-img-grid">
+    <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+<!-- asd -->
+    <div id="center-img-grid">
+    <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+    `
+    loadMore.style.display = 'none'
+    undoText.style.display = 'flex'
+}
+function undo() {
+    certificateGrid.innerHTML = `
+    <div id="center-img-grid">
+    <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+<!-- asd -->
+    <div id="center-img-grid">
+    <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+    </div>`
+
+    loadMore.style.display = 'flex'
+    undoText.style.display = 'none'
+}
+
+if (window.matchMedia('screen and (min-width: 840px)').matches == true){
+    certificateGrid.innerHTML = `
+    <div id="center-img-grid">
+    <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+    <div id="center-img-grid">
+    <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+    `
+    loadMore.style.display = 'none'
+    undoText.style.display = 'flex'
+} else {
+    certificateGrid.innerHTML = 
+    `
+    <div id="center-img-grid">
+        <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+    </div>
+    <div id="center-img-grid">
+        <img src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+    <div id="center-img-grid">
+        <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+    <div id="center-img-grid">
+        <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+    </div>
+    `
+    loadMore.style.display = 'flex'
+    undoText.style.display = 'none'
+}

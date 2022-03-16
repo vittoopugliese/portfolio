@@ -11,7 +11,8 @@
     
 </head>
 <body>
-<div id="wrapper">
+
+    <div id="wrapper">
 <!-- Nav -->
         <header>
                 <nav>
@@ -49,15 +50,37 @@
             <!-- content-wrapper -->
     <div id="content-wrapper"> 
         <div id="center-wrapper">
+
+<!-- certificates -->
+        <section id="centered-container">
+            <header>
+                <h4 style="margin: 8px auto;">- Certificates -</h4>
+            </header>
+        </section>
+        <div id="certificate-grid">
+
+        </div>
+
+        <div class="more" onclick="loadMoreCertificates()">
+            <h3 id="load-more"  style="display: flex;">Load More...</h3>
+        </div>
+        <div class="more" onclick="undo()">
+            <h3 id="undo" style="display: none;">Less</h3>
+
+        </div>
+
+        <div id="bar"></div>
+
 <!-- projects -->
         <section id="projects"></section>
+
 <!-- Knowledge -->
-        <section id="knowledge-content">
+        <section id="centered-container">
             <header> 
-                <h4>Knowledge</h4>
+                <div style="display: flex;"><h4>- Knowledge -</h4></div>
                 <h5 style="font-weight: 100 !important;">
                     These are some of the technologies I am learning and using on my projects.
-                    Also, I am familiarized with some Adobe tools and audio plugins that are not here.<br>
+                    Also, I am familiarized with some Adobe tools that are not here.<br>
                     A good thing to mention is that I have a really good level of English.
                 </h5>
             </header>
@@ -66,7 +89,7 @@
             <!-- logo -->
             <tech-no name="HTML" description="Hypertext markup language, it gives structure to the page. This works with 'Tags'." img="files/logos/html.png"></tech-no>
             <!-- logo -->
-            <tech-no name="CSS" description="Responsible for giving <i>Style</i> to the page. This works whit classes" img="files/logos/css.png"></tech-no>
+            <tech-no name="CSS" description="Responsible for giving <i>Style</i> to the page. This works whit classes." img="files/logos/css.png"></tech-no>
             <!-- logo -->
             <tech-no name="JavaScript" description="Programming language that allows you to put logic onto web pages." img="files/logos/js.png"></tech-no>
             <!-- logo -->
@@ -76,7 +99,7 @@
             <!-- logo -->
             <tech-no name="React JS" description="JavaScript library that's used for building user interfaces." img="files/logos/react.png"></tech-no>
             <!-- logo -->
-            <tech-no name="Firebase" description="Application development software that enables frontends to have a backend without studing." img="files/logos/firebase.png"></tech-no>
+            <tech-no name="Firebase" description="Application development software. Enables frontends to have a backend w/o studing." img="files/logos/firebase.png"></tech-no>
             <!-- logo -->
             <tech-no name="TailWind" description="CSS framework for building custom user interfaces and give style to the page." img="files/logos/tailwind.png"></tech-no>
             <!-- logo -->
@@ -89,11 +112,8 @@
             <tech-no name="FL Studio" description="''Formerly known as FruityLoops, is a music producer's dream.''" img="files/logos/fl.png"></tech-no>
 
         </section>
-        <div id="bar"></div>
+        <!-- <div id="bar"></div> -->
         </div>
-
-<!-- certificates -->
-<section id="certificates-wrapper"></section>
 
 <!-- footer -->
         <footer>

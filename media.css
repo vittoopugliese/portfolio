@@ -1,5 +1,15 @@
-/* gigante */
-@media (min-width: 1920px ){
+@media (max-width: 1920px ){
+    nav{
+        background-color:rgba(21, 21, 27, 0.54);
+    }
+    #nav-name{
+        font-size: 1.7em;
+        margin: .8em
+    }
+    #nav-links a{
+        padding: 1vw;
+        margin-right: 15px;
+    }
     #center-wrapper{
         width: 70vw;
         margin: 0 auto;
@@ -7,14 +17,23 @@
     #logo-text{
         max-width: 20%;
         font-size: 22px;
-        margin-bottom:45px !important;
+        margin-bottom:45px;
     }
     #grid-logo{
         gap: 15px;
     }
+    #image img{
+        width: 264px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 28px;
+    }
     #logo img:hover{
         height: 135px;
-    
+
         transition: width 0.08s ease-in, width 0.08s ease-out ;
         transition: height 0.08s ease-in, height 0.08s ease-out ;
     }
@@ -24,20 +43,25 @@
         transition: width 0.1s ease-out, width 0.1s ease-in ;
         transition: height 0.1s ease-out, height 0.1s ease-in ;
     }
+    #certificate-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 8px 10px;
+        gap: 20px;
+    }
 }
-/* grande */
 
-@media (min-width: 920px ){
-    nav{
-        background-color:rgba(24, 24, 32, 0.6);
+@media (max-width: 1275px ){
+    #center-wrapper{
+        width: 80vw;
+        margin: 0 auto;
     }
-    #nav-name{
-        font-size: 1.9em;
-        margin: .8em
+    #logo-text{
+        max-width: 24%;
     }
-    #nav-links a{
-        padding: 1vw;
-    }
+}
+
+
+@media (max-width: 960px ){
     #info-content{
         display: flex;
         justify-content: center;
@@ -46,34 +70,20 @@
         vertical-align: middle;
         gap: 25px;
     }
-    h2{
-        font-size: 50px;
-    }
-    h3{
-        font-size: 28px;
-    }
-    #image img{
-        width: 264px !important;
-    }
-    #center-wrapper{
-        width: 54vw;
-        margin: 0 auto;
-    }
-    #logo-text{
-        max-width: 10%;
-        font-size: 23px;
-        margin-bottom:40px;
-    }
     #grid-logo{
         gap: 15px;
     }
-    
 }
 
-/* media-no */
-@media (max-width: 920px ){
+@media (max-width: 840px ){
     #toggle-button{
         display: flex;
+        margin-right: 5px !important;
+        margin-top: 2px !important;
+    }
+    nav{
+        display: block;
+        background-color:rgb(23, 23, 29);
     }
     #nav-links {
         display: none;
@@ -82,10 +92,6 @@
     #nav-name{
         font-size: 1.75rem;
         margin: .5rem
-    }
-    nav{
-        flex-direction: column;
-        align-items: flex-start;
     }
     #nav-links ul{
         flex-direction: column;
@@ -100,13 +106,15 @@
     }
     #nav-links.active{
         display: flex;
-
     }
     h2{
-        font-size: 50px;
+        font-size: 45px;
     }
     h3{
-        font-size: 28px;
+        font-size: 24px;
+    }
+    #image img{
+        width: 200px;
     }
     #info-content{
         flex-direction: column; 
@@ -120,87 +128,117 @@
         font-size: 18px;
         margin-bottom:45px;
     }
+    #certificate-grid{
+        grid-template-columns: 1fr 1fr 1fr ;
+        margin: 8px 10px;
+        gap: 20px;
+    }
 }
 
-/* chikito */
-@media (max-width: 550px ){
+@media (max-width: 674px ){
+    #certificate-grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 15px !important;
+        margin: 8px 10px;
+    }
+}
+
+@media (max-width: 540px ){
     #toggle-button{
         margin: 0 auto;
     }
     #image img{
-        width: 154px;
+        width: 140px;
     }
     h2{
-        font-size: 28px;
+        font-size: 32px;
     }
     h3{
-        font-size: 18px;
+        font-size: 22px;
     }
     h4{
-        font-size: 28px;
+        font-size: 25px;
     }
     h5{
-        font-size: 18px;
+        font-size: 21px;
+    }
+    #image img{
+        width: 200px;
     }
     #grid-logo{
         gap: 25px;
         margin: 50px;
     }
     #logo img{
-        width: 100px;
-        height: 100px;
+        height: 110px !important;
+        width: 110px !important;
     }
     #center-wrapper{
-        width: 70vw;
+        width: 92vw;
         margin: 0 auto;
     }
     #logo-text{
         max-width: 25%;
-        font-size: 13px;
+        font-size: 17px;
     }
-    
+    #contact a{
+        margin:8px;
+        padding: 0px;
+    }
+    footer h3{
+        margin: 20px 0px 20px 0px;
+        font-size: 15px !important;
+    }
+    #certificate-grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 8px 10px;
+    }
 }
-/* ultrachikito */
-@media (max-width: 384px ){
+
+@media (max-width: 420px ){
     h2{
-        font-size: 26px;
+        font-size: 28px;
     }
     h3{
-        font-size: 16px;
+        font-size: 18px;
     }
     h4{
         font-size: 24px;
     }
     h5{
-        font-size: 15px;
+        font-size: 18px;
+    }
+    #image img{
+        width: 154px;
     }
     #grid-logo{
-        gap: 20px;
-        margin: 32px;
+        gap: 18px;
+        margin: 20px;
     }
     #logo img{
-        width: 80px;
-        height: 80px;
+        width: 80px !important;
+        height: 80px !important;
     }
     #center-wrapper{
-        width: 84vw;
+        width: 97vw;
         margin: 0 auto;
     }
     #logo-text{
-        max-width: 22% !important;
-        font-size: 10px !important;
-        margin-bottom:50px !important;
+        max-width: 30% ;
+        font-size: 15px ;
+        margin-bottom:38px ;
     }
     #logo img:hover{
-        height: 75px;
-        width: 75px;
-    
-        transition: width 0.08s ease-in, width 0.08s ease-out ;
-        transition: height 0.08s ease-in, height 0.08s ease-out ;
+        height: 92px !important;
+        width: 92px !important;
+
+        transition: width 0.1s ease-in, width 0.1s ease-out ;
+        transition: height 0.1s ease-in, height 0.1s ease-out ;
     }
     #logo img:not(hover){
-        height: 80px;
-        width: 80px;
+        height: 100px !important;
+        width: 100px !important;
     
         transition: width 0.1s ease-out, width 0.1s ease-in ;
         transition: height 0.1s ease-out, height 0.1s ease-in ;
@@ -209,16 +247,9 @@
         margin:7px;
         padding: 2px;
     }
-}
-/* em */
-@media (max-width: 1275px ){
-    #center-wrapper{
-        width: 80vw;
-        margin: 0 auto;
-    }
-    #logo-text{
-        max-width: 24%;
-        /* font-size: 20px ; */
+    #certificate-grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 6px !important;
+        margin: 8px 10px;
     }
 }
-/* em */
