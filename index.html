@@ -11,8 +11,7 @@
     
 </head>
 <body>
-
-    <div id="wrapper">
+<div id="wrapper">
 <!-- Nav -->
         <header>
                 <nav>
@@ -47,42 +46,31 @@
                 <a id="arrow" href=""></a>
 			</section>
         </div>
-            <!-- content-wrapper -->
-    <div id="content-wrapper"> 
-        <div id="center-wrapper">
-
-<!-- certificates -->
-        <section id="centered-container">
-            <header>
-                <h4 style="margin: 8px auto;">- Certificates -</h4>
-            </header>
-        </section>
-        <div id="certificate-grid">
-
-        </div>
-
-        <div class="more" onclick="loadMoreCertificates()">
-            <h3 id="load-more"  style="display: flex;">Load More...</h3>
-        </div>
-        <div class="more" onclick="undo()">
-            <h3 id="undo" style="display: none;">Less</h3>
-
-        </div>
-
-        <div id="bar"></div>
+<!-- content-wrapper -->
+<div id="content-wrapper"> 
+    <div id="center-wrapper">
 
 <!-- projects -->
-        <section id="projects"></section>
+        <section id="centered-container">
+            <header> 
+            <div style="display: flex;"><h4>- Projects -</h4></div>
+            <div id="bar"></div>
+            <h5 style="font-weight: 100 !important;"> sample sample  sample sample   sample sample   sample sample </h5>
+        </header>
+        </section>
+
 
 <!-- Knowledge -->
         <section id="centered-container">
             <header> 
                 <div style="display: flex;"><h4>- Knowledge -</h4></div>
+                <div id="bar"></div>
                 <h5 style="font-weight: 100 !important;">
                     These are some of the technologies I am learning and using on my projects.
                     Also, I am familiarized with some Adobe tools that are not here.<br>
                     A good thing to mention is that I have a really good level of English.
                 </h5>
+                
             </header>
         </section>
         <section id="grid-logo">
@@ -112,7 +100,21 @@
             <tech-no name="FL Studio" description="''Formerly known as FruityLoops, is a music producer's dream.''" img="files/logos/fl.png"></tech-no>
 
         </section>
-        <!-- <div id="bar"></div> -->
+        </div>
+
+<!-- certificates -->
+        <section id="centered-container">
+            <h4 style="margin: 8px auto;">- Certificates -</h4>
+        </section>
+        <div id="bar"></div>
+    
+        <div id="certificate-grid"></div>
+            
+        <div class="more" onclick="loadMoreCertificates()">
+            <h3 id="load-more"  style="display: flex;">Load More...</h3>
+        </div>
+        <div class="more" onclick="undo()">
+            <h3 id="undo" style="display: none;">Less</h3>
         </div>
 
 <!-- footer -->
@@ -128,8 +130,8 @@
             </div>
             <h3><i>Web made by <a target="_blank" href="https://instagram.com/vittoopugliese">Vittorio Pugliese</a> with pure JavaScript.</i></h3>
         </footer>
-        
-    </div>
+
+</div>
 </div>
 </body>
 <script src="app.js"></script>

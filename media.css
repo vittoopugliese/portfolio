@@ -1,4 +1,10 @@
 @media (max-width: 1920px ){
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 30px;
+    }
     nav{
         background-color:rgba(21, 21, 27, 0.54);
     }
@@ -25,11 +31,6 @@
     #image img{
         width: 264px;
     }
-    h2{
-        font-size: 50px;
-    }
-    h3{
-        font-size: 28px;
     }
     #logo img:hover{
         height: 135px;
@@ -45,10 +46,13 @@
     }
     #certificate-grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin: 8px 10px;
-        gap: 20px;
+        gap: 15px;
+        width: 70vw;
     }
-}
+    #certificate-grid img{
+        width: 90%;
+        height: 90%;
+    }
 
 @media (max-width: 1275px ){
     #center-wrapper{
@@ -57,6 +61,10 @@
     }
     #logo-text{
         max-width: 24%;
+    }
+    #certificate-grid{
+        grid-template-columns: 1fr 1fr;
+        width: 80vw;
     }
 }
 
@@ -73,6 +81,15 @@
     #grid-logo{
         gap: 15px;
     }
+    #certificate-grid{
+        grid-template-columns: 1fr 1fr;
+        width: 80vw;
+    }
+    #certificate-grid img{
+        width: 90%;
+        height: 90%;
+    }
+
 }
 
 @media (max-width: 840px ){
@@ -107,12 +124,7 @@
     #nav-links.active{
         display: flex;
     }
-    h2{
-        font-size: 45px;
-    }
-    h3{
-        font-size: 24px;
-    }
+
     #image img{
         width: 200px;
     }
@@ -129,19 +141,22 @@
         margin-bottom:45px;
     }
     #certificate-grid{
-        grid-template-columns: 1fr 1fr 1fr ;
-        margin: 8px 10px;
-        gap: 20px;
+        width: 94vw;
     }
+
 }
 
 @media (max-width: 674px ){
     #certificate-grid{
         grid-template-columns: 1fr 1fr;
-        gap: 15px !important;
-        margin: 8px 10px;
+        gap: 15px;
+    }
+    #certificate-grid img{
+        width: 100%;
+        height: 100%;
     }
 }
+
 
 @media (max-width: 540px ){
     #toggle-button{
@@ -178,7 +193,7 @@
         margin: 0 auto;
     }
     #logo-text{
-        max-width: 25%;
+        max-width: 30%;
         font-size: 17px;
     }
     #contact a{
@@ -192,7 +207,7 @@
     #certificate-grid{
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        margin: 8px 10px;
+        width: 90vw;
     }
 }
 
@@ -207,7 +222,7 @@
         font-size: 24px;
     }
     h5{
-        font-size: 18px;
+        font-size: 20px;
     }
     #image img{
         width: 154px;
@@ -221,7 +236,7 @@
         height: 80px !important;
     }
     #center-wrapper{
-        width: 97vw;
+        width: 95vw;
         margin: 0 auto;
     }
     #logo-text{
@@ -249,7 +264,7 @@
     }
     #certificate-grid{
         grid-template-columns: 1fr 1fr;
-        gap: 6px !important;
-        margin: 8px 10px;
+        gap: 6px;
+        width: 90vw;
     }
 }
