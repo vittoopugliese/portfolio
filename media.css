@@ -5,16 +5,8 @@
     h3{
         font-size: 30px;
     }
-    nav{
-        background-color:rgba(21, 21, 27, 0.54);
-    }
-    #nav-name{
-        font-size: 1.7em;
-        margin: .8em
-    }
-    #nav-links a{
-        padding: 1vw;
-        margin-right: 15px;
+    #info-content{
+        gap: 45px;
     }
     #center-wrapper{
         width: 70vw;
@@ -27,10 +19,10 @@
     }
     #grid-logo{
         gap: 15px;
+        margin: 50px auto;
     }
     #image img{
         width: 264px;
-    }
     }
     #logo img:hover{
         height: 135px;
@@ -46,14 +38,16 @@
     }
     #certificate-grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 15px;
+        gap: 10px;
+        column-gap: 6px !important;
         width: 70vw;
+        margin: 0px auto !important;
     }
     #certificate-grid img{
         width: 90%;
         height: 90%;
     }
-
+}
 @media (max-width: 1275px ){
     #center-wrapper{
         width: 80vw;
@@ -66,17 +60,61 @@
         grid-template-columns: 1fr 1fr;
         width: 80vw;
     }
+    #info-content{
+        padding: 20px;
+        text-align: left;
+    }
+    
 }
 
 
 @media (max-width: 960px ){
+    nav{
+        background-color:rgb(18, 18, 20) !important;  
+    }
+    #toggle-button{
+        display: flex;
+        margin-right: 5px;
+        margin-top: 2px;
+    }
+    .container{
+        width: 92%;
+        display: block;
+        z-index: -10000;
+        background-color:rgb(18, 18, 20) !important;  
+        border-radius: 0px 0px 25px 25px;
+    }
+    #nav-links {
+        display: none;
+        width: 100%;
+    }
+    #nav-name{
+        font-size: 1.75rem;
+        margin: .5rem
+    }
+    #nav-links ul{
+        flex-direction: column;
+        width: 100%; 
+        background-color:rgb(18, 18, 20) !important;    
+        border-radius: 0px 0px 25px 25px ;
+    }
+    #nav-links li{
+        padding: 5px;
+    }
+    #nav-links a{
+        padding: .5rem 1rem;
+        margin: 0px auto;
+    }
+    #nav-links.active{
+        display: flex;
+    }
     #info-content{
         display: flex;
         justify-content: center;
         flex-direction: row;
         text-align: center;
         vertical-align: middle;
-        gap: 25px;
+        gap: 15px;
     }
     #grid-logo{
         gap: 15px;
@@ -93,37 +131,6 @@
 }
 
 @media (max-width: 840px ){
-    #toggle-button{
-        display: flex;
-        margin-right: 5px !important;
-        margin-top: 2px !important;
-    }
-    nav{
-        display: block;
-        background-color:rgb(23, 23, 29);
-    }
-    #nav-links {
-        display: none;
-        width: 100%;
-    }
-    #nav-name{
-        font-size: 1.75rem;
-        margin: .5rem
-    }
-    #nav-links ul{
-        flex-direction: column;
-        width: 100%; 
-    }
-    #nav-links li{
-        text-align: center;
-        padding: 5px;
-    }
-    #nav-links a{
-        padding: .5rem 1rem;
-    }
-    #nav-links.active{
-        display: flex;
-    }
 
     #image img{
         width: 200px;
@@ -140,20 +147,22 @@
         font-size: 18px;
         margin-bottom:45px;
     }
-    #certificate-grid{
-        width: 94vw;
-    }
-
 }
 
 @media (max-width: 674px ){
     #certificate-grid{
         grid-template-columns: 1fr 1fr;
-        gap: 15px;
+        gap: 5px;
     }
     #certificate-grid img{
         width: 100%;
         height: 100%;
+    }
+    #info-content{
+        gap: 5px;
+    }
+    #info-content{
+        padding: 4px;
     }
 }
 
@@ -184,6 +193,9 @@
         gap: 25px;
         margin: 50px;
     }
+    #info-content{
+        gap: 0px !important;
+    }
     #logo img{
         height: 110px !important;
         width: 110px !important;
@@ -206,8 +218,6 @@
     }
     #certificate-grid{
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        width: 90vw;
     }
 }
 
@@ -224,6 +234,12 @@
     h5{
         font-size: 20px;
     }
+    #landing-wrapper{
+
+    }
+    #info-content{
+        
+    }
     #image img{
         width: 154px;
     }
@@ -231,29 +247,29 @@
         gap: 18px;
         margin: 20px;
     }
-    #logo img{
-        width: 80px !important;
-        height: 80px !important;
-    }
     #center-wrapper{
         width: 95vw;
         margin: 0 auto;
     }
     #logo-text{
-        max-width: 30% ;
+        max-width: 35% ;
         font-size: 15px ;
         margin-bottom:38px ;
     }
+    #logo img{
+        width: 85px !important;
+        height: 85px !important;
+    }
     #logo img:hover{
-        height: 92px !important;
-        width: 92px !important;
+        height: 78px !important;
+        width: 78px !important;
 
         transition: width 0.1s ease-in, width 0.1s ease-out ;
         transition: height 0.1s ease-in, height 0.1s ease-out ;
     }
     #logo img:not(hover){
-        height: 100px !important;
-        width: 100px !important;
+        height: 85px !important;
+        width: 85px !important;
     
         transition: width 0.1s ease-out, width 0.1s ease-in ;
         transition: height 0.1s ease-out, height 0.1s ease-in ;
@@ -264,7 +280,5 @@
     }
     #certificate-grid{
         grid-template-columns: 1fr 1fr;
-        gap: 6px;
-        width: 90vw;
     }
 }

@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Rubik:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Rubik:ital,wght@1,300&display=swap');
-*{padding: 0;margin: 0;box-sizing: border-box;outline:none;font-family: 'Fredoka', sans-serif;font-weight: 500;} 
-*::selection{background-color: var(--secondary);color: var(--main);font-weight: 900 !important;}
+*{padding: 0;margin: 0;box-sizing: border-box;outline:none;font-family: 'Fredoka', sans-serif;font-weight: 500} 
+*::selection{background-color: var(--secondary);color: var(--main);font-weight: 900 !important;} html{scroll-behavior: smooth;}
 a{text-decoration: none !important;}
 *, *:before, *:after {box-sizing: inherit;}
 :root{
     --main:rgb(32, 32, 39);
-    --secondary:rgb(250, 209, 121);
+    --secondary:rgb(254, 222, 151);
     --grey:rgb(51, 50, 47);
     --light:rgb(221, 221, 221);
-    --new: rgba(21, 21, 27, 0.74)
+    --new: rgba(18, 18, 20, 0.54)
 }
 #wrapper{
     height: 100vh;
@@ -17,7 +17,7 @@ a{text-decoration: none !important;}
 }
 #center-wrapper{
     width: 80vw;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 #content-wrapper{
     background-image: linear-gradient(to top,rgb(22, 22, 24) 0%, var(--main) 100%);
@@ -46,30 +46,43 @@ h5{
     margin: 4px auto;
     font-weight: 600 !important;
 }
-nav{
+nav {
+    background-color: rgba(21, 21, 27, 0.25);
+    position: fixed;
+    transition: background 0.3s;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color:var(--main);
-    color:var(--light);
-    position: fixed;
-    z-index: 10;
-    width: 100vw;
+    height: 60px;
+    width: 100%;
+    z-index: 5;
+    border-radius: 0px 0px 25px 25px ;
 }
+.container {
+    width: 95%;
+    display: inherit;
+    max-width: 1275px;
+    justify-content: inherit;
+    margin: auto;
+    padding: 0px 5px;
+  }
 #nav-name{
-    font-size: 1.5rem;
-    margin-left: 1rem !important;
+    font-size: 2rem;
+    margin:auto 0px;
 }
-#nav-name:hover{color: var(--secondary) !important;}
+#nav-links{
+    justify-content: right;
+    padding: 0px;
+    display: flex;
+}
 #nav-links ul{
-    margin: 0px;
+    margin: auto;
     padding: 0px;
     display: flex;
     margin-right: 15px auto;
 }
 #nav-links li{
     list-style: none;
-    margin-right: 10px auto;
+    margin-right: 0px auto;
 }
 #nav-links a{
     text-decoration:none;
@@ -79,26 +92,22 @@ nav{
     justify-content: center;
     font-size: 22px;
     white-space: nowrap;
+    font-weight: 600;
 }
 #nav-links a:hover{
     color: var(--secondary) !important;
-    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    font-weight: 900;
+    transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 #nav-links a:not(hover){
     color: var(--light) !important;
-    -moz-transition: border-color 0.4s ease-in-out, color 0.4s ease-in-out;
-    -webkit-transition: border-color 0.4s ease-in-out, color 0.4s ease-in-out;
-    -ms-transition: border-color 0.4s ease-in-out, color 0.4s ease-in-out;
     transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 a:-webkit-any-link {
     color: var(--light) !important;
 }
 #toggle-button{
     position: absolute;
-    top: .75rem;
+    top: 1rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -135,10 +144,10 @@ a:-webkit-any-link {
     z-index: 1 !important;
 }
 #bg::after {
-    background-image: -moz-linear-gradient(top, rgba(25, 24, 32, 0.92), rgba(23, 24, 32, 0.92)), url(files/bg-code.jpg);;
-    background-image: -webkit-linear-gradient(top, rgba(25, 24, 32, 0.92), rgba(23, 24, 32, 0.92)), url(files/bg-code.jpg);;
-    background-image: -ms-linear-gradient(top, rgba(25, 24, 32, 0.92), rgba(23, 24, 32, 0.92)), url(files/bg-code.jpg);;
-    background-image: linear-gradient(top, rgba(25, 24, 32, 0.92), rgba(23, 24, 32, 0.92)), url(files/bg-code.jpg);;
+    background-image: -moz-linear-gradient(top, rgba(25, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url(files/bg-code.jpg);;
+    background-image: -webkit-linear-gradient(top, rgba(25, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url(files/bg-code.jpg);;
+    background-image: -ms-linear-gradient(top, rgba(25, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url(files/bg-code.jpg);;
+    background-image: linear-gradient(top, rgba(25, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url(files/bg-code.jpg);;
     display: block;
     height: 100%;
     left: 0;
@@ -151,22 +160,21 @@ a:-webkit-any-link {
     color: var(--grey);
     background-color: aliceblue;
     font-weight: 900;
+    border-radius: 10px;
     font-family: 'Rubik', sans-serif;font-weight: 800;
-
 }
 .vp:hover{
-    color: rgb(248, 209, 124);
-    background-color: var(--new);
-    cursor:pointer;
-    transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-.vp:not(hover){
     color: var(--grey);
     background-color: aliceblue;
     transition: color 0.5s ease-in-out, color 0.5s ease-in-out;
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-    border-radius: 10px;
+}
+.vp:not(hover){
+    color: var(--secondary);
+    background-color: var(--new);
+    cursor:pointer;
+    transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 #arrow:before {
     background-image: url("files/svgs/arrow.svg");
@@ -183,15 +191,15 @@ a:-webkit-any-link {
     width: 2em;
     z-index: 1;
 }
-#arrow:active{
-    display: none;
-}
 #info-content{
     display: flex;
     justify-content: center;
     flex-wrap: column;
-    text-align: center;
+    text-align: left;
+    background-color: var(--new);
+    border-radius: 40px;
     margin: auto;
+    padding: 40px;
     vertical-align: middle;
     /* position: absolute;
     top: 50%;
@@ -202,13 +210,36 @@ a:-webkit-any-link {
 #landing-wrapper{
     display: flex;
     height: 100vh;
+    width: 95vw;
+    margin: 0px auto;
 }
 #image{
     margin-top: 38px;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: -moz-none;
-    filter: drop-shadow(0px 0px 25px rgba(145, 145, 145, 0.329));
+    filter: drop-shadow(0px 0px 25px rgba(138, 137, 122, 0.329));
+}
+#cv-button{
+    background-color: var(--secondary);
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    border-style: none;
+    border-radius: 12px;
+    cursor: pointer;
+    gap: 10px;
+}
+#cv-button img{
+    width: 40px;
+    height: 40px;
+}
+h6{
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    margin: auto;
 }
 #centered-container{
     display: flex;
@@ -217,6 +248,8 @@ a:-webkit-any-link {
     text-align: center;
     margin: auto;
     vertical-align: middle;
+    width: 90%;
+    text-align: center;
 }
 #grid-logo{
     display: grid;
@@ -272,12 +305,12 @@ a:-webkit-any-link {
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 10px auto;
+    margin: 0px auto !important;
 }
 #certificate-grid img{
     width: 100%;
+    margin: 5px auto !important;
     height: 100%;
-    gap: 10px;
     cursor: pointer;
     filter: drop-shadow(2px 2px 8px rgba(255, 255, 255, 0.246));
 }
@@ -286,6 +319,7 @@ a:-webkit-any-link {
     justify-content: center;
     grid-column: 1 / 4;
     cursor: pointer;
+    margin: 10px;
 }
 .more:hover h3{
     font-weight: 900 !important;
@@ -306,9 +340,8 @@ a:-webkit-any-link {
     height: 2px;
     max-width: 44vw;
     width: 75%;
-    filter: drop-shadow(-1px 2px 7px rgba(255, 244, 141, 0.781));
+    filter: drop-shadow(-1px 2px 7px aliceblue);
 }
-
 /* footer */
 footer{
     display: flex;
@@ -317,6 +350,9 @@ footer{
     text-align: center;
     flex-direction: column;
     background-color:rgb(20, 20, 20);
+    border-radius:25px 25px 0px 0px ;
+    border-top: 10px solid rgba(80, 80, 80, 0.15);
+    filter: drop-shadow(-2px 2px 100px rgba(100, 100, 100, 0.15));
 }
 #more-info{
     width: 85vw;

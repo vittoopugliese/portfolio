@@ -1,14 +1,21 @@
 //reload to 0:0
-// window.onbeforeunload = function () {
-//     window.scrollTo(0, 0);
-// }
+ window.onbeforeunload = function () {
+     window.scrollTo(0, 0);
+ }
+
 
 // toggle nav
 const toggleNav = document.querySelectorAll('#toggle-button')[0]
 const navLinks = document.querySelectorAll('#nav-links')[0]
+const nav = document.querySelectorAll('#nav')[0]
 toggleNav.addEventListener('click', () => {
     navLinks.classList.toggle('active')
 })
+
+window.addEventListener("scroll", function () {
+    window.scrollY > 100 && (nav.style.background = `rgba(21, 21, 27, 0.95)`);
+    window.scrollY < 100 && (nav.style.background = `rgba(21, 21, 27, 0.25)`);
+  });
 
 // logo component
 class techno extends HTMLElement{
@@ -131,6 +138,7 @@ function loadMoreCertificates() {
     <div id="center-img-grid">
         <img src="files/certificates/reactjs.png" draggable="false" alt="Platzi Certificate">    
     </div>
+    
 
     `
     loadMore.style.display = 'none'

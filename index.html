@@ -7,15 +7,14 @@
     <link rel="shortcut icon" href="files/avatar.png"/>
     <link rel="stylesheet" href="estyles.css">
     <link rel="stylesheet" href="media.css">
-    <title>My Sheet</title>
-    
+    <title>Vittorio Pugliese | Web Developer</title>
 </head>
 <body>
 <div id="wrapper">
 <!-- Nav -->
-        <header>
-                <nav>
-                    <h1 id="nav-name"><a href="index.html">My Sheet</a></h1>
+            <nav id="nav">
+                <div class="container">
+                        <h1 id="nav-name"><a href="index.html">Portfolio</a></h1>
                         <div id="toggle-button">
                             <span class="bar"></span>
                             <span class="bar"></span>
@@ -23,15 +22,16 @@
                         </div>
                         <div id="nav-links">
                             <ul>
-                                <li><a href="#">Projects</a></li>
-                                <li><a href="#">Knowledge</a></li>
-                                <li><a href="#">Certificates</a></li>
-                                <li><a href="#">About me</a></li>
-                                <li><a href="#">Contact me</a></li>
+                                <li><a href="#Projects">Projects</a></li>
+                                <li><a href="#Knowledge">Knowledge</a></li>
+                                <li><a href="#Certificates">Certificates</a></li>
+                                <li><a href="#About">About me</a></li>
+                                <li><a href="#Contact">Contact</a></li>
                             </ul>
                         </div>
-                    </nav>
-        </header>
+                </div>
+            </nav>
+ 
 <!-- Info -->
         <div id="bg"></div>
         <div id="landing-wrapper">
@@ -39,40 +39,45 @@
 				<header> 
 					<h2>Hola!<br>I am <a class="vp">Vittorio Pugliese</a></h2>
 					<h3>Web development and innovation apassionate.
-                        <br>Ambicious, adventurer and  motivated <br>by art, order & work.<br>                    
-                        Currently learning Front-End with React.</h3>
+                    <br>Ambicious, adventurer and  motivated <br>by art, order & work<br>                    
+                    Currently learning Front-End with React.</h3>
 				</header>
 				<span id="image"><img src="files/avatar.png" alt="Avatar" draggable="false"></span>
-                <a id="arrow" href=""></a>
+                <a id="arrow" href="#Projects"></a>
 			</section>
         </div>
-<!-- content-wrapper -->
+
+<!-- Content-wrapper -->
 <div id="content-wrapper"> 
     <div id="center-wrapper">
+  
 
-<!-- projects -->
-        <section id="centered-container">
-            <header> 
-            <div style="display: flex;"><h4>- Projects -</h4></div>
-            <div id="bar"></div>
-            <h5 style="font-weight: 100 !important;"> sample sample  sample sample   sample sample   sample sample </h5>
-        </header>
-        </section>
+<!-- Projects -->
+        <section id="Projects"></section>
 
+            <div id="centered-container">
+                <header> 
+                <div style="display: flex;"><h4>- Projects -</h4></div>
+                <div id="bar"></div>
+                <h5 style="font-weight: 100 !important;"> sample sample  sample sample   sample sample   sample sample </h5>
+            </header>
+            </div>
 
 <!-- Knowledge -->
-        <section id="centered-container">
-            <header> 
-                <div style="display: flex;"><h4>- Knowledge -</h4></div>
-                <div id="bar"></div>
-                <h5 style="font-weight: 100 !important;">
-                    These are some of the technologies I am learning and using on my projects.
-                    Also, I am familiarized with some Adobe tools that are not here.<br>
-                    A good thing to mention is that I have a really good level of English.
-                </h5>
-                
-            </header>
-        </section>
+    <section id="Knowledge"></section>
+            <div id="centered-container">
+                <header> 
+                    <div style="display: flex;"><h4>- Knowledge -</h4></div>
+                    <div id="bar"></div>
+                    <h5 style="font-weight: 100 !important;">
+                        These are some of the technologies I am learning and using on my projects. <br>
+                        Also, I am familiarized with some Adobe tools that are not here.<br>
+                        A good thing to mention is that I have a really good level of English.
+                    </h5>
+                    
+                </header>
+            </div>
+        
         <section id="grid-logo">
             <!-- logo -->
             <tech-no name="HTML" description="Hypertext markup language, it gives structure to the page. This works with 'Tags'." img="files/logos/html.png"></tech-no>
@@ -100,38 +105,44 @@
             <tech-no name="FL Studio" description="''Formerly known as FruityLoops, is a music producer's dream.''" img="files/logos/fl.png"></tech-no>
 
         </section>
-        </div>
-
-<!-- certificates -->
-        <section id="centered-container">
-            <h4 style="margin: 8px auto;">- Certificates -</h4>
-        </section>
-        <div id="bar"></div>
-    
-        <div id="certificate-grid"></div>
+        
+        <!-- Certificates -->
+        <section id="Certificates">
+            <section id="centered-container">
+                <h4 style="margin: 8px auto;">- Certificates -</h4>
+            </section>
+            <div id="bar"></div>
             
-        <div class="more" onclick="loadMoreCertificates()">
-            <h3 id="load-more"  style="display: flex;">Load More...</h3>
-        </div>
-        <div class="more" onclick="undo()">
-            <h3 id="undo" style="display: none;">Less</h3>
-        </div>
-
-<!-- footer -->
-        <footer>
-            <div id="more-info">
-                <h5>Feel free to contact me and ask any question you have.</h5>
+            <div id="certificate-grid"></div>
+            
+            <div class="more" onclick="loadMoreCertificates()">
+                <h3 id="load-more"  style="display: flex;">Load More...</h3>
             </div>
-            <div id="contact">
-                <a class="link-to" target="_blank" href="https://www.linkedin.com/in/vittorio-pugliese-920996231/"><img id="iso-1" src="files/svgs/livacio.svg" alt="linkedin profile"></a>
-                <a class="link-to" target="_blank" href="https://github.com/vittoopugliese"><img id="iso-2" src="files/svgs/gitvacio.svg" alt="github profile"></a>
-                <a class="link-to" target="_blank" href="https://www.google.com/search?q=mailto+doesnt+work%2C+my+mail+is+vittoopugliese%40gmail.com&client=ms-android-samsung&sxsrf=APq-WBu6-xbw_QbVwWjeNBF5G3m11kMVyw%3A1647053526339&ei=1gosYpKjFMTN1sQPla2S0AU&ved=0ahUKEwiS5vPCyL_2AhXEppUCHZWWBFoQ4dUDCA4&uact=5&oq=mailto+doesnt+work%2C+my+mail+is+vittoopugliese%40gmail.com&gs_lcp=Cgdnd3Mtd2l6EAM6BwgjELADECc6BAghEApKBAhBGAFKBAhGGABQuxxYhDFg91loAnAAeACAAXGIAdQDkgEDMi4zmAEAoAEByAEBwAEB&sclient=gws-wiz"><img id="iso-3" src="files/svgs/gmailvacio.svg" alt="mailto"></a>
-                <a class="link-to" target="_blank" href="https://api.whatsapp.com/send/?phone=+541178310432"><img id="iso-4" src="files/svgs/wspvacio.svg" alt="whatsapp number"></a>
+            <div class="more" onclick="undo()">
+                <h3 id="undo" style="display: none;">Less</h3>
             </div>
-            <h3><i>Web made by <a target="_blank" href="https://instagram.com/vittoopugliese">Vittorio Pugliese</a> with pure JavaScript.</i></h3>
-        </footer>
-
-</div>
+        </section>
+        <a href="files/CV.pdf" download="Vittorio Pugliese CV" target="_blank" rel="noopener noreferrer"><button id="cv-button"><img src="files/svgs/pdf.png" draggable="false"></img><h6>Download CV</h6></button></a>
+    </div>
+        
+<!-- Footer -->
+        <section id="Contact">
+            <footer>
+                <div id="more-info">
+                    <h5>Feel free to contact me and ask any question you have.</h5>
+                </div>
+                <div id="contact">
+                    <a class="link-to" target="_blank" href="https://www.linkedin.com/in/vittorio-pugliese-920996231/"><img id="iso-1" src="files/svgs/livacio.svg" alt="linkedin profile"></a>
+                    <a class="link-to" target="_blank" href="https://github.com/vittoopugliese"><img id="iso-2" src="files/svgs/gitvacio.svg" alt="github profile"></a>
+                    <a class="link-to" target="_blank" href="https://www.google.com/search?q=mailto+doesnt+work%2C+my+mail+is+vittoopugliese%40gmail.com&client=ms-android-samsung&sxsrf=APq-WBu6-xbw_QbVwWjeNBF5G3m11kMVyw%3A1647053526339&ei=1gosYpKjFMTN1sQPla2S0AU&ved=0ahUKEwiS5vPCyL_2AhXEppUCHZWWBFoQ4dUDCA4&uact=5&oq=mailto+doesnt+work%2C+my+mail+is+vittoopugliese%40gmail.com&gs_lcp=Cgdnd3Mtd2l6EAM6BwgjELADECc6BAghEApKBAhBGAFKBAhGGABQuxxYhDFg91loAnAAeACAAXGIAdQDkgEDMi4zmAEAoAEByAEBwAEB&sclient=gws-wiz"><img id="iso-3" src="files/svgs/gmailvacio.svg" alt="mailto"></a>
+                    <a class="link-to" target="_blank" href="https://api.whatsapp.com/send/?phone=+541178310432"><img id="iso-4" src="files/svgs/wspvacio.svg" alt="whatsapp number"></a>
+                </div>
+                <h3><i>Web made by <a target="_blank" href="https://instagram.com/vittoopugliese">Vittorio Pugliese</a> with pure JavaScript.</i></h3>
+            </footer>
+        </section>
+        
+        
+    </div>
 </div>
 </body>
 <script src="app.js"></script>
