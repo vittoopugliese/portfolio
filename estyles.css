@@ -73,6 +73,7 @@ nav {
     justify-content: right;
     padding: 0px;
     display: flex;
+    user-select: none;
 }
 #nav-links ul{
     margin: auto;
@@ -201,11 +202,6 @@ a:-webkit-any-link {
     margin: auto;
     padding: 40px;
     vertical-align: middle;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); */
 }
 #landing-wrapper{
     display: flex;

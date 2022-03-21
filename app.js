@@ -12,6 +12,10 @@ toggleNav.addEventListener('click', () => {
     navLinks.classList.toggle('active')
 })
 
+navLinks.addEventListener('click', () => {
+    navLinks.classList.toggle('active')
+});
+
 window.addEventListener("scroll", function () {
     window.scrollY > 100 && (nav.style.background = `rgba(21, 21, 27, 0.95)`);
     window.scrollY < 100 && (nav.style.background = `rgba(21, 21, 27, 0.25)`);
@@ -108,35 +112,37 @@ const certificateGrid = document.querySelector('#certificate-grid')
 const loadMore = document.querySelector('#load-more')
 const undoText = document.querySelector('#undo')
 
+
+
 function loadMoreCertificates() {
     certificateGrid.innerHTML = `
 
     <div id="center-img-grid">
-        <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/codecamp-js.png" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/ecs6.png" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+        <img class="zoom" src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">    
     </div>  
     <div id="center-img-grid">
-        <img src="files/certificates/reactjs.png" draggable="false" alt="Platzi Certificate">    
+        <img class="zoom" src="files/certificates/reactjs.png" draggable="false" alt="Platzi Certificate">    
     </div>
 
     <!-- stop -->
 
     <div id="center-img-grid">
-        <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/frontend.png" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+        <img class="zoom" src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
     </div>  
     <div id="center-img-grid">
-        <img src="files/certificates/reactjs.png" draggable="false" alt="Platzi Certificate">    
+        <img class="zoom" src="files/certificates/poo.png" draggable="false" alt="Platzi Certificate">    
     </div>
     
 
@@ -148,17 +154,18 @@ function undo() {
     certificateGrid.innerHTML = `
 
     <div id="center-img-grid">
-        <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/codecamp-js.png" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/ecs6.png" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+        <img class="zoom" src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">    
     </div>  
     <div id="center-img-grid">
-        <img src="files/certificates/reactjs.png" draggable="false" alt="Platzi Certificate">    
+        <img class="zoom" src="files/certificates/reactjs.png" draggable="false" alt="Platzi Certificate">    
     </div>
+
     `
     loadMore.style.display = 'flex'
     undoText.style.display = 'none'
@@ -168,31 +175,31 @@ if (window.matchMedia('screen and (min-width: 840px)').matches == true){
     certificateGrid.innerHTML = `
 
     <div id="center-img-grid">
-        <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/codecamp-js.png" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/ecs6.png" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+        <img class="zoom" src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">    
     </div>  
     <div id="center-img-grid">
-        <img src="files/certificates/reactjs.png" draggable="false" alt="Platzi Certificate">    
+        <img class="zoom" src="files/certificates/reactjs.png" draggable="false" alt="Platzi Certificate">    
     </div>
 
     <!-- stop -->
 
     <div id="center-img-grid">
-        <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/frontend.png" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+        <img class="zoom" src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
     </div>  
     <div id="center-img-grid">
-        <img src="files/certificates/reactjs.png" draggable="false" alt="Platzi Certificate">    
+        <img class="zoom" src="files/certificates/poo.png" draggable="false" alt="Platzi Certificate">    
     </div>
 
     `
@@ -203,16 +210,16 @@ if (window.matchMedia('screen and (min-width: 840px)').matches == true){
     `
 
     <div id="center-img-grid">
-        <img src="files/certificates/basic-js.png" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/codecamp-js.png" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/ecs6.png" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img src="files/certificates/logic-thoughts.png" draggable="false" alt="Platzi Certificate">    
+        <img class="zoom" src="files/certificates/practico-js.png" draggable="false" alt="Platzi Certificate">    
     </div>  
     <div id="center-img-grid">
-        <img src="files/certificates/reactjs.png" draggable="false" alt="Platzi Certificate">    
+        <img class="zoom" src="files/certificates/reactjs.png" draggable="false" alt="Platzi Certificate">    
     </div>
 
     `
