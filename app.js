@@ -124,16 +124,16 @@ function loadMoreCertificates() {
         <img class="zoom" src="files/certificates/ecs6.webp" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img class="zoom" src="files/certificates/practico-js.webp" draggable="false" alt="Platzi Certificate">    
-    </div>  
-    <div id="center-img-grid">
         <img class="zoom" src="files/certificates/reactjs.webp" draggable="false" alt="Platzi Certificate">    
     </div>
 
     <!-- stop -->
 
     <div id="center-img-grid">
-        <img class="zoom" src="files/certificates/basic-js.webp" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/async.webp" draggable="false" alt="Platzi Certificate">    
+    </div>  
+    <div id="center-img-grid">
+        <img class="zoom" src="files/certificates/git.webp" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
         <img class="zoom" src="files/certificates/frontend.webp" draggable="false" alt="Platzi Certificate">
@@ -143,6 +143,9 @@ function loadMoreCertificates() {
     </div>  
     <div id="center-img-grid">
         <img class="zoom" src="files/certificates/poo.webp" draggable="false" alt="Platzi Certificate">    
+    </div>
+    <div id="center-img-grid">
+        <img class="zoom" src="files/certificates/practico-js.webp" draggable="false" alt="Platzi Certificate">    
     </div>
     
 
@@ -159,9 +162,6 @@ function undo() {
     <div id="center-img-grid">
         <img class="zoom" src="files/certificates/ecs6.webp" draggable="false" alt="Platzi Certificate">
     </div>
-    <div id="center-img-grid">
-        <img class="zoom" src="files/certificates/practico-js.webp" draggable="false" alt="Platzi Certificate">    
-    </div>  
     <div id="center-img-grid">
         <img class="zoom" src="files/certificates/reactjs.webp" draggable="false" alt="Platzi Certificate">    
     </div>
@@ -181,16 +181,16 @@ if (window.matchMedia('screen and (min-width: 840px)').matches == true){
         <img class="zoom" src="files/certificates/ecs6.webp" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
-        <img class="zoom" src="files/certificates/practico-js.webp" draggable="false" alt="Platzi Certificate">    
-    </div>  
-    <div id="center-img-grid">
         <img class="zoom" src="files/certificates/reactjs.webp" draggable="false" alt="Platzi Certificate">    
     </div>
 
     <!-- stop -->
 
     <div id="center-img-grid">
-        <img class="zoom" src="files/certificates/basic-js.webp" draggable="false" alt="Platzi Certificate">
+        <img class="zoom" src="files/certificates/async.webp" draggable="false" alt="Platzi Certificate">    
+    </div>  
+    <div id="center-img-grid">
+        <img class="zoom" src="files/certificates/git.webp" draggable="false" alt="Platzi Certificate">
     </div>
     <div id="center-img-grid">
         <img class="zoom" src="files/certificates/frontend.webp" draggable="false" alt="Platzi Certificate">
@@ -200,6 +200,9 @@ if (window.matchMedia('screen and (min-width: 840px)').matches == true){
     </div>  
     <div id="center-img-grid">
         <img class="zoom" src="files/certificates/poo.webp" draggable="false" alt="Platzi Certificate">    
+    </div>
+    <div id="center-img-grid">
+        <img class="zoom" src="files/certificates/practico-js.webp" draggable="false" alt="Platzi Certificate">    
     </div>
 
     `
@@ -215,9 +218,6 @@ if (window.matchMedia('screen and (min-width: 840px)').matches == true){
     <div id="center-img-grid">
         <img class="zoom" src="files/certificates/ecs6.webp" draggable="false" alt="Platzi Certificate">
     </div>
-    <div id="center-img-grid">
-        <img class="zoom" src="files/certificates/practico-js.webp" draggable="false" alt="Platzi Certificate">    
-    </div>  
     <div id="center-img-grid">
         <img class="zoom" src="files/certificates/reactjs.webp" draggable="false" alt="Platzi Certificate">    
     </div>
