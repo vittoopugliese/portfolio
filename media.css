@@ -24,14 +24,11 @@
         height: 135px;
         width: 135px;
 
-        transition: width 0.08s ease-in, width 0.08s ease-out ;
-        transition: height 0.08s ease-in, height 0.08s ease-out ;
+        transition: width 0.08s ease-in, height 0.08s ease-out ;
     }
     #logo img:not(hover){
         height: 150px;
         width: 150px;
-        transition: width 0.1s ease-out, width 0.1s ease-in ;
-        transition: height 0.1s ease-out, height 0.1s ease-in ;
     }
     #certificate-grid{
         grid-template-columns: 1fr 1fr 1fr;
@@ -45,7 +42,12 @@
         height: 90%;
     }
     #malas{
-        width: 38vw;
+        width: 45vw;
+        margin: 0px auto;
+    }
+    #MyHeader{
+        width: 65%;
+        justify-content: center;
         margin: 0px auto;
     }
 }
@@ -129,6 +131,9 @@
         width: 90%;
         height: 90%;
     }
+    #MyHeader{
+        width: 100%;
+    }
 
 }
 
@@ -159,7 +164,6 @@
         padding: 2px;
     }
 }
-
 
 @media (max-width: 540px ){
     #toggle-button{
@@ -196,15 +200,11 @@
         height: 90px ;
         width: 90px ;
 
-        transition: width 0.1s ease-in, width 0.1s ease-out ;
-        transition: height 0.1s ease-in, height 0.1s ease-out ;
+        transition: width 0.1s ease-in, height 0.1s ease-out ;
     }
     #logo img:not(hover){
-        height: 110px ;
-        width: 110px ;
-    
-        transition: width 0.1s ease-out, width 0.1s ease-in ;
-        transition: height 0.1s ease-out, height 0.1s ease-in ;
+        height: 100px ;
+        width: 100px ;
     }
     #center-wrapper{
         width: 92vw;
@@ -264,16 +264,11 @@
     #logo img:hover{
         height: 78px ;
         width: 78px ;
-
-        transition: width 0.1s ease-in, width 0.1s ease-out ;
-        transition: height 0.1s ease-in, height 0.1s ease-out ;
+        transition: width 0.1s ease-in, height 0.1s ease-out ;
     }
     #logo img:not(hover){
         height: 85px ;
         width: 85px ;
-    
-        transition: width 0.1s ease-out, width 0.1s ease-in ;
-        transition: height 0.1s ease-out, height 0.1s ease-in ;
     }
     #contact a{
         margin:7px;
@@ -293,8 +288,6 @@
     }
     h5{
         font-size: 16px;
-    }
-    #info-content{
     }
     #image{
         margin: 12px;
@@ -323,15 +316,11 @@
         height: 68px ;
         width: 68px ;
 
-        transition: width 0.1s ease-in, width 0.1s ease-out ;
-        transition: height 0.1s ease-in, height 0.1s ease-out ;
+        transition: width 0.1s ease-in, height 0.1s ease-out ;
     }
     #logo img:not(hover){
         height: 72px ;
         width: 72px ;
-    
-        transition: width 0.1s ease-out, width 0.1s ease-in ;
-        transition: height 0.1s ease-out, height 0.1s ease-in ;
     }
     #contact{
         text-align: center;
