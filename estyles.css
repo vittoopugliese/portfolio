@@ -9,7 +9,7 @@ a{text-decoration: none !important;}
     --secondary:rgb(255, 209, 110);
     --grey:rgb(51, 50, 47);
     --light:rgb(221, 221, 221);
-    --new: rgba(18, 18, 20, 0.54)
+    --new: rgba(18, 18, 20, 0.64)
 }
 #wrapper{
     height: 100vh;
@@ -37,7 +37,9 @@ h4{
     background-color: var(--new);
     font-family: 'Rubik', sans-serif;font-weight: 800;
     font-size: 30px;
-    margin: 10px auto;
+    margin: 20px auto;
+    padding: 0px 10px;
+    border-radius: 10px;
 }
 h5{
     color: var(--light) !important;
@@ -162,6 +164,7 @@ a:-webkit-any-link {
     font-weight: 900;
     border-radius: 10px;
     font-family: 'Rubik', sans-serif;font-weight: 800;
+    padding: 0px 3px;
 }
 .vp:hover{
     color: var(--grey);

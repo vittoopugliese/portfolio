@@ -72,7 +72,6 @@
     
 }
 
-
 @media (max-width: 960px ){
     nav{
         background-color:rgb(18, 18, 20) !important;  
@@ -97,7 +96,6 @@
     #nav-name{
         font-size: 1.75rem;
         margin: 5px auto;
-        margin-left: 10px;
     }
     #nav-links ul{
         flex-direction: column;
