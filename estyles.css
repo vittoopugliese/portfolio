@@ -16,7 +16,7 @@ a{text-decoration: none !important;}
     max-width: 100vw;
 }
 #center-wrapper{
-    width: 80vw;
+    width: 94vw !important;
     margin: 0px auto;
 }
 #content-wrapper{
@@ -119,7 +119,7 @@ a:-webkit-any-link {
 }
 #toggle-button .bar{
     height: 4px;
-    width: 100%;
+    width: 98%;
     background-color: var(--light);
     border-radius: 10px;
 }
@@ -205,7 +205,7 @@ a:-webkit-any-link {
 #landing-wrapper{
     display: flex;
     height: 100vh;
-    width: 95vw;
+    width: 92vw;
     margin: 0px auto;
 }
 #image{
@@ -228,7 +228,7 @@ a:-webkit-any-link {
 #grid-logo{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
+    gap: 25px;
     margin: 50px auto;
     align-items: center;
     justify-content: center;
