@@ -218,7 +218,7 @@ a:-webkit-any-link {
 #centered-container{
     display: flex;
     justify-content: center;
-    flex-wrap: column;
+    flex-direction: column;
     text-align: center;
     margin: auto;
     vertical-align: middle;
@@ -283,8 +283,8 @@ a:-webkit-any-link {
 }
 #certificate-grid img{
     width: 100%;
-    margin: 5px auto !important;
     height: 100%;
+    margin: 5px auto !important;
     cursor: pointer;
     filter: drop-shadow(2px 2px 8px rgba(255, 255, 255, 0.246));
 }
@@ -306,7 +306,6 @@ a:-webkit-any-link {
     display: flex !important;
     justify-content: center;
     margin: 10px auto 20px auto;
-    /* background: var(--secondary); */
     background: aliceblue;
     color: aliceblue;
     content: Certificates;
@@ -316,6 +315,7 @@ a:-webkit-any-link {
     max-width: 44vw;
     width: 75%;
     filter: drop-shadow(-1px 2px 7px aliceblue);
+    opacity: 54%;
 }
 #cv-button{
     background-color: var(--secondary);
@@ -338,6 +338,38 @@ h6{
     font-size: 15px;
     margin: auto;
 }
+#yo{
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    user-select: none;
+    transform: rotate(350deg);
+    cursor: pointer;
+    border: 2px solid rgb(105, 105, 105);
+    filter: drop-shadow(0px 0px 12px rgb(124, 124, 124));
+}
+#yo:hover{
+    animation-name:rotate;
+    animation-duration:0.54s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate {
+    0%   {
+        width: 180px;
+        height: 180px;
+    }
+    50% {
+        width: 220px;
+        height: 220px;
+    }
+    0%   {
+        width: 180px;
+        height: 180px;
+    }
+  }
 
 /* footer */
 footer{
@@ -356,7 +388,7 @@ footer{
     margin: 15px auto 20px auto;
 }
 .link-to:hover{
-    filter: drop-shadow(-2px 2px 12px rgba(189, 189, 189, 0.819));
+    filter: drop-shadow(-2px 2px 9px rgba(189, 189, 189, 0.819));
     transition: filter 0.25s ease-in, filter 0.25s ease-out;
 }
 #contact{
