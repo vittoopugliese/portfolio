@@ -20,7 +20,7 @@ a{text-decoration: none !important;}
     margin: 0px auto;
 }
 #content-wrapper{
-    background-image: linear-gradient(to top,rgb(22, 22, 24) 0%, var(--main) 100%);
+    background-image: linear-gradient(to top,rgb(22, 22, 24) 0%, var(--main) 100%) ;
 }
 h2{
     color: var(--light) !important;
@@ -36,10 +36,11 @@ h4{
     color: aliceblue;
     background-color: var(--new);
     font-family: 'Rubik', sans-serif;font-weight: 800;
-    font-size: 30px;
-    margin: 20px auto;
-    padding: 0px 10px;
-    border-radius: 10px;
+    font-size: 29px;
+    margin: 10px auto;
+    padding: 3px 10px;
+    border-radius: 10px;  
+    white-space: nowrap;
 }
 h5{
     color: var(--light) !important;
@@ -146,10 +147,10 @@ a:-webkit-any-link {
     z-index: 1 !important;
 }
 #bg::after {
-    background-image: -moz-linear-gradient(top, rgba(25, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url(files/bg-code.jpg);;
-    background-image: -webkit-linear-gradient(top, rgba(25, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url(files/bg-code.jpg);;
-    background-image: -ms-linear-gradient(top, rgba(25, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url(files/bg-code.jpg);;
-    background-image: linear-gradient(top, rgba(25, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url(files/bg-code.jpg);;
+    background-image: -moz-linear-gradient(top, rgba(25, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url(files/bg-code.webp);;
+    background-image: -webkit-linear-gradient(top, rgba(25, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url(files/bg-code.webp);;
+    background-image: -ms-linear-gradient(top, rgba(25, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url(files/bg-code.webp);;
+    background-image: linear-gradient(top, rgba(25, 24, 32, 0.9), rgba(23, 24, 32, 0.9)), url(files/bg-code.webp);;
     display: block;
     height: 100%;
     left: 0;
@@ -204,6 +205,7 @@ a:-webkit-any-link {
     margin: auto;
     padding: 40px;
     vertical-align: middle;
+    border: 1px solid rgba(255, 255, 255, 0.034);
 }
 #landing-wrapper{
     display: flex;
@@ -405,4 +407,15 @@ footer{
 footer h3{
     margin: 20px 0px 20px 0px;
     font-size: 20px !important;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--main);
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--secondary);
+    border-radius: 30px;
 }

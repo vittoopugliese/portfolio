@@ -49,6 +49,7 @@
         width: 65%;
         justify-content: center;
         margin: 0px auto;
+        margin-bottom: 25px;
     }
 }
 @media (max-width: 1275px ){
@@ -131,6 +132,7 @@
     }
     #MyHeader{
         width: 100%;
+        margin-bottom: 25px;
     }
 
 }
