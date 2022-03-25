@@ -1,9 +1,7 @@
 //reload to 0:0
  window.onbeforeunload = function () {
-     window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
  }
-
-
 // toggle nav
 const toggleNav = document.querySelectorAll('#toggle-button')[0]
 const navLinks = document.querySelectorAll('#nav-links')[0]
@@ -226,3 +224,33 @@ if (window.matchMedia('screen and (min-width: 840px)').matches == true){
     loadMore.style.display = 'flex'
     undoText.style.display = 'none'
 }
+
+// please dont say how i live !
+const loading = document.querySelector('#points')
+const preloader = document.querySelector('#preloader')
+setTimeout(() =>{
+    loading.innerHTML = 'Loading'
+    setTimeout(() =>{
+        loading.innerHTML = 'Loading.'
+        setTimeout(() =>{
+            loading.innerHTML = 'Loading..'
+            setTimeout(() =>{
+                loading.innerHTML = 'Loading...'
+                setTimeout(() =>{
+                    loading.innerHTML = 'Loading....'
+                    setTimeout(() =>{
+                        loading.innerHTML = 'Loading.....'
+                    },200)
+                },200)
+            },200)
+        },200)
+    },200)
+},200)
+
+setTimeout(() => {
+    preloader.style.opacity = '0';
+    setTimeout(() => {
+        preloader.style.display = 'none';
+        window.scrollTo(0, 0);
+    }, 500)
+}, 1000)
