@@ -542,19 +542,6 @@ reactlinks.addEventListener('mouseleave', () => {
         RLhoverContent.style.display = 'none'
     },250)
 })
-function mlref() {
-    window.open('https://github.com/vittoopugliese/MyLinks')
-}
-function nfref() {
-    window.open('https://nftorio.vittoriopugliese.com/')
-}
-function rmlref() {
-    window.open('https://github.com/vittoopugliese/react-linktree')
-}
-
-if (window.matchMedia('screen and (max-width: 540px)').matches == true){
-
-}
 
 // please dont say how i live !
 const loading = document.querySelector('#points')
@@ -587,3 +574,7 @@ setTimeout(() => {
 }, 11)
 
 })
+
+function nfref() {
+    window.open('https://nftorio.vittoriopugliese.com/')
+}

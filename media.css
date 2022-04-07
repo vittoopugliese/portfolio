@@ -246,6 +246,12 @@
     grid-template-columns: 1fr;
     width: 80vw;
   }
+  #mylinkshover,
+  #reactlinkshover,
+  #nftoriohover {
+    border-radius: 5px;
+    height: 60%;
+  }
 }
 
 @media (max-width: 420px) {
@@ -394,6 +400,7 @@
   #reactlinkshover,
   #nftoriohover {
     border-radius: 5px;
+    height: 100%;
   }
   h6 {
     font-size: 1em;

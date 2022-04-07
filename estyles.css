@@ -539,6 +539,7 @@ footer h3 {
   background-color: var(--new);
   width: 100%;
   height: 0px;
+  max-height: 300px;
   position: absolute;
   bottom: 6px;
   border-radius: 20px;
