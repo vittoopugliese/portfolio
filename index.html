@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="media.css">
     <title>Vittorio | Web Developer</title>
 </head>
-<body>
+<body id="body" style="transition: filter 1s;">
     <div id="preloader">
         <div id="loader"></div>
         <h5>Vittorio Pugliese<br>Front-End Developer</h5>
@@ -69,9 +69,7 @@
 <!-- Projects -->
         <section id="Projects">
             <div style="display: flex;"><h4>- Projects -</h4></div>
-
                 <div id="slider">     
-
                     <div id="tabs">
                         <img id="mylinksTab" src="files/projects/mltab.png" draggable="false">
                         <img id="nftorioTab" src="files/projects/nftab.png" draggable="false">
@@ -83,13 +81,13 @@
                         <img id="ml2" class="images" src="files/projects/mylinks2.webp" onclick="mlref()" draggable="false">
                         <img id="ml3" class="images" src="files/projects/mylinks3.webp" onclick="mlref()" draggable="false">
                         <img id="ml4" class="images" src="files/projects/mylinks4.webp" onclick="mlref()" draggable="false">
-                            <div id="mylinkshover">
-                                <div id="MLhoverContent">
-                                    <h6>MyLinks</h6>
-                                    <p class="phover">Link tree made with pure JS and Firebase</p>
-                                    <a href="https://github.com/vittoopugliese/MyLinks" target="_blank"><img class="iconhover" src="files/svgs/gitlleno.svg"></a>
-                                </div>
+                        <div id="mylinkshover">
+                            <div id="MLhoverContent">
+                                <h6>MyLinks</h6>
+                                <p class="phover">Link tree made with pure JS and Firebase</p>
+                                <a href="https://github.com/vittoopugliese/MyLinks" target="_blank"><img class="iconhover" src="files/svgs/gitlleno.svg"></a>
                             </div>
+                        </div>
                     </div>
 
                     <div id="nftorio">
@@ -97,13 +95,13 @@
                         <img id="nf2" class="images" src="files/projects/nftorio2.png" onclick="nfref()" draggable="false">
                         <img id="nf3" class="images" src="files/projects/nftorio3.png" onclick="nfref()" draggable="false">
                         <img id="nf4" class="images" src="files/projects/nftorio4.png" onclick="nfref()" draggable="false">
-                            <div id="nftoriohover">
-                                <div id="NFhoverContent">
-                                    <h6>NFTorio Marketplace</h6>
-                                    <p class="phover">This project is my own NFTs marketplace.<br>I'm building the entire UI/UX and then I will mint<br>and implement Metamask payments.</p>
-                                    <a href="https://nftorio.vittoriopugliese.com/" class="iconhover" target="_blank"><img id="nfhover" src="files/projects/nftab.png"></a>
-                                </div>
+                        <div id="nftoriohover">
+                            <div id="NFhoverContent">
+                                <h6>NFTorio Marketplace</h6>
+                                <p class="phover">This project is my own NFTs marketplace.<br>I'm building the entire UI/UX and then I will mint<br>and implement Metamask payments.</p>
+                                <a href="https://nftorio.vittoriopugliese.com/" target="_blank"><img id="nfhover" src="files/projects/nftab.png"></a>
                             </div>
+                        </div>
                     </div>
 
                     <div id="reactlinks">
@@ -111,13 +109,13 @@
                         <img id="rml2" class="images" src="files/projects/linktree2.png" onclick="nfref()"  draggable="false">
                         <img id="rml3" class="images" src="files/projects/linktree3.png" onclick="nfref()"  draggable="false">
                         <img id="rml4" class="images" src="files/projects/linktree4.png" onclick="nfref()"  draggable="false">
-                            <div id="reactlinkshover">
-                                <div id="RLhoverContent">
-                                    <h6>MyLinks</h6>
-                                    <p class="phover">Link tree made with React.js & Firebase</p>
-                                    <a href="https://github.com/vittoopugliese/react-linktree" target="_blank"><img class="iconhover" src="files/svgs/gitlleno.svg"></a>
-                                </div>
+                        <div id="reactlinkshover">
+                            <div id="RLhoverContent">
+                                <h6>MyLinks</h6>
+                                <p class="phover">Link tree made with React.js & Firebase</p>
+                                <a href="https://github.com/vittoopugliese/react-linktree" target="_blank"><img class="iconhover" src="files/svgs/gitlleno.svg"></a>
                             </div>
+                        </div>
                     </div>
 
                     <div id="buttoms">

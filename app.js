@@ -1,8 +1,11 @@
 //reload to 0:0
  window.onbeforeunload = function () {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
+    body.style.filter = "blur(10px)";
  }
 // toggle nav
+document.addEventListener("DOMContentLoaded", () => {
+
 const toggleNav = document.querySelectorAll('#toggle-button')[0]
 const navLinks = document.querySelectorAll('#nav-links')[0]
 const nav = document.querySelectorAll('#nav')[0]
@@ -224,36 +227,6 @@ if (window.matchMedia('screen and (min-width: 840px)').matches == true){
     loadMore.style.display = 'flex'
     undoText.style.display = 'none'
 }
-
-// please dont say how i live !
-const loading = document.querySelector('#points')
-const preloader = document.querySelector('#preloader')
-setTimeout(() =>{
-    loading.innerHTML = 'Loading'
-    setTimeout(() =>{
-        loading.innerHTML = 'Loading.'
-        setTimeout(() =>{
-            loading.innerHTML = 'Loading..'
-            setTimeout(() =>{
-                loading.innerHTML = 'Loading...'
-                setTimeout(() =>{
-                    loading.innerHTML = 'Loading....'
-                    setTimeout(() =>{
-                        loading.innerHTML = 'Loading.....'
-                    },200)
-                },200)
-            },200)
-        },200)
-    },200)
-},200)
-
-setTimeout(() => {
-    preloader.style.opacity = '0';
-    setTimeout(() => {
-        preloader.style.display = 'none';
-        // window.scrollTo(0, 0);
-    }, 500)
-}, 11)
 
 // projects
 const slider = document.querySelector('#slider');
@@ -526,7 +499,7 @@ NFhoverContent.style.display = 'none'
 RLhoverContent.style.display = 'none'
 
 mylinks.addEventListener('mouseover', () => {
-    mylinkshover.style.height = '50%'
+    mylinkshover.style.height = '92%'
     mylinkshover.style.opacity = '1'
     setTimeout(()=> {
         MLhoverContent.style.display = 'flex'
@@ -541,7 +514,7 @@ mylinks.addEventListener('mouseleave', () => {
 })
 
 nftorio.addEventListener('mouseover', () => {
-    nftoriohover.style.height = '60%'
+    nftoriohover.style.height = '92%'
     nftoriohover.style.opacity = '1'
     setTimeout(()=> {
         NFhoverContent.style.display = 'flex'
@@ -556,7 +529,7 @@ nftorio.addEventListener('mouseleave', () => {
 })
 
 reactlinks.addEventListener('mouseover', () => {
-    reactlinkshover.style.height = '65%'
+    reactlinkshover.style.height = '92%'
     reactlinkshover.style.opacity = '1'
     setTimeout(()=> {
         RLhoverContent.style.display = 'flex'
@@ -578,3 +551,39 @@ function nfref() {
 function rmlref() {
     window.open('https://github.com/vittoopugliese/react-linktree')
 }
+
+if (window.matchMedia('screen and (max-width: 540px)').matches == true){
+
+}
+
+// please dont say how i live !
+const loading = document.querySelector('#points')
+const preloader = document.querySelector('#preloader')
+setTimeout(() =>{
+    loading.innerHTML = 'Loading'
+    setTimeout(() =>{
+        loading.innerHTML = 'Loading.'
+        setTimeout(() =>{
+            loading.innerHTML = 'Loading..'
+            setTimeout(() =>{
+                loading.innerHTML = 'Loading...'
+                setTimeout(() =>{
+                    loading.innerHTML = 'Loading....'
+                    setTimeout(() =>{
+                        loading.innerHTML = 'Loading.....'
+                    },200)
+                },200)
+            },200)
+        },200)
+    },200)
+},200)
+
+setTimeout(() => {
+    preloader.style.opacity = '0';
+    setTimeout(() => {
+        preloader.style.display = 'none';
+        window.scrollTo(0, 0);
+    }, 500)
+}, 11)
+
+})
