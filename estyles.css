@@ -37,7 +37,7 @@ a {
   max-width: 100vw;
 }
 #center-wrapper {
-  width: 90vw !important;
+  width: 90vw;
   margin: 0px auto;
 }
 #content-wrapper {
@@ -516,6 +516,7 @@ footer h3 {
   border-radius: 50px;
   cursor: pointer;
   padding: 05px;
+  margin: 2px 5px;
 }
 
 #mylinksTab{
@@ -539,12 +540,12 @@ footer h3 {
   background-color: var(--new);
   width: 100%;
   height: 0px;
-  max-height: 300px;
+  max-height: 200px;
   position: absolute;
   bottom: 6px;
   border-radius: 20px;
   opacity: 0;
-  transition: height 0.2s ease-in, opacity 0.1s;
+  transition: height 0.2s ease-in, opacity 0.2s;
 
   display: flex;
   justify-content: center;
@@ -602,13 +603,16 @@ h6 {
   text-align: left;
 }
 .iconhover{ 
-  width: 50px ;
+  width: 54px ;
   position: absolute;
-  bottom: 20px;  
-  left: 20px;
+  bottom: 30px;  
+  right: 30px;
 }
 #nfhover{
-  width: 150px ;
+  width: 130px ;
   border-radius: 20px;
   cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }

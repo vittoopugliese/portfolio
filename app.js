@@ -1,11 +1,8 @@
 //reload to 0:0
  window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-    body.style.filter = "blur(10px)";
  }
 // toggle nav
-document.addEventListener("DOMContentLoaded", () => {
-
 const toggleNav = document.querySelectorAll('#toggle-button')[0]
 const navLinks = document.querySelectorAll('#nav-links')[0]
 const nav = document.querySelectorAll('#nav')[0]
@@ -499,7 +496,7 @@ NFhoverContent.style.display = 'none'
 RLhoverContent.style.display = 'none'
 
 mylinks.addEventListener('mouseover', () => {
-    mylinkshover.style.height = '92%'
+    mylinkshover.style.height = '95%'
     mylinkshover.style.opacity = '1'
     setTimeout(()=> {
         MLhoverContent.style.display = 'flex'
@@ -514,7 +511,7 @@ mylinks.addEventListener('mouseleave', () => {
 })
 
 nftorio.addEventListener('mouseover', () => {
-    nftoriohover.style.height = '92%'
+    nftoriohover.style.height = '95%'
     nftoriohover.style.opacity = '1'
     setTimeout(()=> {
         NFhoverContent.style.display = 'flex'
@@ -529,7 +526,7 @@ nftorio.addEventListener('mouseleave', () => {
 })
 
 reactlinks.addEventListener('mouseover', () => {
-    reactlinkshover.style.height = '92%'
+    reactlinkshover.style.height = '95%'
     reactlinkshover.style.opacity = '1'
     setTimeout(()=> {
         RLhoverContent.style.display = 'flex'
@@ -568,12 +565,11 @@ setTimeout(() =>{
 setTimeout(() => {
     preloader.style.opacity = '0';
     setTimeout(() => {
-        preloader.style.display = 'none';
         window.scrollTo(0, 0);
+        preloader.style.display = 'none';
     }, 500)
 }, 11)
 
-})
 
 function nfref() {
     window.open('https://nftorio.vittoriopugliese.com/')
