@@ -1,6 +1,6 @@
 //reload to 0:0
  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
  }
 // toggle nav
 const toggleNav = document.querySelectorAll('#toggle-button')[0]
@@ -251,6 +251,330 @@ setTimeout(() => {
     preloader.style.opacity = '0';
     setTimeout(() => {
         preloader.style.display = 'none';
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
     }, 500)
-}, 1000)
+}, 11)
+
+// projects
+const slider = document.querySelector('#slider');
+
+const mylinks = document.querySelector('#mylinks');
+const mylinksTab = document.querySelector('#mylinksTab');
+const mylinkshover = document.querySelector('#mylinkshover');
+const MLhoverContent = document.querySelector('#MLhoverContent');
+const ml1 = document.querySelector('#ml1');
+const ml2 = document.querySelector('#ml2');
+const ml3 = document.querySelector('#ml3');
+const ml4 = document.querySelector('#ml4');
+
+const nftorio = document.querySelector('#nftorio');
+const nftorioTab = document.querySelector('#nftorioTab');
+const nftoriohover = document.querySelector('#nftoriohover');
+const NFhoverContent = document.querySelector('#NFhoverContent');
+const nf1 = document.querySelector('#nf1');
+const nf2 = document.querySelector('#nf2');
+const nf3 = document.querySelector('#nf3');
+const nf4 = document.querySelector('#nf4');
+
+const reactlinks = document.querySelector('#reactlinks');
+const reactlinksTab = document.querySelector('#reactlinksTab');
+const reactlinkshover = document.querySelector('#reactlinkshover');
+const RLhoverContent = document.querySelector('#RLhoverContent');
+const rml1 = document.querySelector('#rml1');
+const rml2 = document.querySelector('#rml2');
+const rml3 = document.querySelector('#rml3');
+const rml4 = document.querySelector('#rml4');
+
+const gallery1 = document.querySelector('#gallery1');
+const gallery2 = document.querySelector('#gallery2');
+const gallery3 = document.querySelector('#gallery3');
+const gallery4 = document.querySelector('#gallery4');
+
+nf1.style.opacity = '1'
+nf1.style.display = 'flex'
+nf2.style.display = 'none'
+nf3.style.display = 'none'
+nf4.style.display = 'none'
+
+ml1.style.display = 'none'
+ml2.style.display = 'none'
+ml3.style.display = 'none'
+ml4.style.display = 'none'
+
+rml1.style.display = 'flex'
+rml2.style.display = 'none'
+rml3.style.display = 'none'
+rml4.style.display = 'none'
+
+nftorio.style.display = 'flex'
+mylinks.style.display = 'none'
+reactlinks.style.display = 'none'
+
+mylinksTab.addEventListener('click', () => {
+    nf1.style.display = 'none'
+    nf2.style.display = 'none'
+    nf3.style.display = 'none'
+    nf4.style.display = 'none'
+    
+    ml1.style.opacity = '1'
+    ml1.style.display = 'flex'
+    ml2.style.display = 'none'
+    ml3.style.display = 'none'
+    ml4.style.display = 'none'
+    
+    rml1.style.display = 'flex'
+    rml2.style.display = 'none'
+    rml3.style.display = 'none'
+    rml4.style.display = 'none'
+    
+    nftorio.style.display = 'none'
+    mylinks.style.display = 'flex'
+    reactlinks.style.display = 'none'
+
+    gallery1.addEventListener('click', () => {
+        ml1.style.opacity = '1'
+        ml2.style.opacity = '0'
+        ml3.style.opacity = '0'
+        ml4.style.opacity = '0'
+        setTimeout(() => {
+            ml1.style.display = 'flex'
+            ml2.style.display = 'none'
+            ml3.style.display = 'none'
+            ml4.style.display = 'none'
+        },300)
+    })
+    gallery2.addEventListener('click', () => {
+        ml1.style.opacity = '0'
+        ml2.style.opacity = '1'
+        ml3.style.opacity = '0'
+        ml4.style.opacity = '0'
+        setTimeout(() => {
+            ml1.style.display = 'none'
+            ml2.style.display = 'flex'
+            ml3.style.display = 'none'
+            ml4.style.display = 'none'
+        },300)
+    })
+    gallery3.addEventListener('click', () => {
+        ml1.style.opacity = '0'
+        ml2.style.opacity = '0'
+        ml3.style.opacity = '1'
+        ml4.style.opacity = '0'
+        setTimeout(() => {
+            ml1.style.display = 'none'
+            ml2.style.display = 'none'
+            ml3.style.display = 'flex'
+            ml4.style.display = 'none'
+        },300)
+    })
+    gallery4.addEventListener('click', () => {
+        ml1.style.opacity = '0'
+        ml2.style.opacity = '0'
+        ml3.style.opacity = '0'
+        ml4.style.opacity = '1'
+        setTimeout(() => {
+            ml1.style.display = 'none'
+            ml2.style.display = 'none'
+            ml3.style.display = 'none'
+            ml4.style.display = 'flex'
+        },300)
+    })
+})
+nftorioTab.addEventListener('click', () => {
+    nf1.style.opacity = '1'
+    nf1.style.display = 'flex'
+    nf2.style.display = 'none'
+    nf3.style.display = 'none'
+    nf4.style.display = 'none'
+    
+    ml1.style.display = 'none'
+    ml2.style.display = 'none'
+    ml3.style.display = 'none'
+    ml4.style.display = 'none'
+    
+    rml1.style.display = 'flex'
+    rml2.style.display = 'none'
+    rml3.style.display = 'none'
+    rml4.style.display = 'none'
+    
+    nftorio.style.display = 'flex'
+    mylinks.style.display = 'none'
+    reactlinks.style.display = 'none'
+
+    gallery1.addEventListener('click', () => {
+        nf1.style.opacity = '1'
+        nf2.style.opacity = '0'
+        nf3.style.opacity = '0'
+        nf4.style.opacity = '0'
+        setTimeout(() => {
+            nf1.style.display = 'flex'
+            nf2.style.display = 'none'
+            nf3.style.display = 'none'
+            nf4.style.display = 'none'
+        },300)
+    })
+    gallery2.addEventListener('click', () => {
+        nf1.style.opacity = '0'
+        nf2.style.opacity = '1'
+        nf3.style.opacity = '0'
+        nf4.style.opacity = '0'
+        setTimeout(() => {
+            nf1.style.display = 'none'
+            nf2.style.display = 'flex'
+            nf3.style.display = 'none'
+            nf4.style.display = 'none'
+        },300)
+    })
+    gallery3.addEventListener('click', () => {
+        nf1.style.opacity = '0'
+        nf2.style.opacity = '0'
+        nf3.style.opacity = '1'
+        nf4.style.opacity = '0'
+        setTimeout(() => {
+            nf1.style.display = 'none'
+            nf2.style.display = 'none'
+            nf3.style.display = 'flex'
+            nf4.style.display = 'none'
+        },300)
+    })
+    gallery4.addEventListener('click', () => {
+        nf1.style.opacity = '0'
+        nf2.style.opacity = '0'
+        nf3.style.opacity = '0'
+        nf4.style.opacity = '1'
+        setTimeout(() => {
+            nf1.style.display = 'none'
+            nf2.style.display = 'none'
+            nf3.style.display = 'none'
+            nf4.style.display = 'flex'
+        },300)
+    })
+})
+reactlinksTab.addEventListener('click', () => {
+    nf1.style.display = 'flex'
+    nf2.style.display = 'none'
+    nf3.style.display = 'none'
+    nf4.style.display = 'none'
+    
+    ml1.style.display = 'none'
+    ml2.style.display = 'none'
+    ml3.style.display = 'none'
+    ml4.style.display = 'none'
+
+    rml1.style.opacity = '1'
+    rml1.style.display = 'flex'
+    rml2.style.display = 'none'
+    rml3.style.display = 'none'
+    rml4.style.display = 'none'
+    
+    nftorio.style.display = 'none'
+    mylinks.style.display = 'none'
+    reactlinks.style.display = 'flex'
+
+    gallery1.addEventListener('click', () => {
+        rml1.style.opacity = '1'
+        rml2.style.opacity = '0'
+        rml3.style.opacity = '0'
+        rml4.style.opacity = '0'
+        setTimeout(() => {
+            rml1.style.display = 'flex'
+            rml2.style.display = 'none'
+            rml3.style.display = 'none'
+            rml4.style.display = 'none'
+        },300)
+    })
+    gallery2.addEventListener('click', () => {
+        rml1.style.opacity = '0'
+        rml2.style.opacity = '1'
+        rml3.style.opacity = '0'
+        rml4.style.opacity = '0'
+        setTimeout(() => {
+            rml1.style.display = 'none'
+            rml2.style.display = 'flex'
+            rml3.style.display = 'none'
+            rml4.style.display = 'none'
+        },300)
+    })
+    gallery3.addEventListener('click', () => {
+        rml1.style.opacity = '0'
+        rml2.style.opacity = '0'
+        rml3.style.opacity = '1'
+        rml4.style.opacity = '0'
+        setTimeout(() => {
+            rml1.style.display = 'none'
+            rml2.style.display = 'none'
+            rml3.style.display = 'flex'
+            rml4.style.display = 'none'
+        },300)
+    })
+    gallery4.addEventListener('click', () => {
+        rml1.style.opacity = '0'
+        rml2.style.opacity = '0'
+        rml3.style.opacity = '0'
+        rml4.style.opacity = '1'
+        setTimeout(() => {
+            rml1.style.display = 'none'
+            rml2.style.display = 'none'
+            rml3.style.display = 'none'
+            rml4.style.display = 'flex'
+        },300)
+    })
+})
+
+MLhoverContent.style.display = 'none'
+NFhoverContent.style.display = 'none'
+RLhoverContent.style.display = 'none'
+
+mylinks.addEventListener('mouseover', () => {
+    mylinkshover.style.height = '50%'
+    mylinkshover.style.opacity = '1'
+    setTimeout(()=> {
+        MLhoverContent.style.display = 'flex'
+    },250)
+})
+mylinks.addEventListener('mouseleave', () => {
+    mylinkshover.style.height = '0'
+    mylinkshover.style.opacity = '0'
+    setTimeout(()=> {
+        MLhoverContent.style.display = 'none'
+    },250)
+})
+
+nftorio.addEventListener('mouseover', () => {
+    nftoriohover.style.height = '60%'
+    nftoriohover.style.opacity = '1'
+    setTimeout(()=> {
+        NFhoverContent.style.display = 'flex'
+    },250)
+})
+nftorio.addEventListener('mouseleave', () => {
+    nftoriohover.style.height = '0'
+    nftoriohover.style.opacity = '0'
+    setTimeout(()=> {
+        NFhoverContent.style.display = 'none'
+    },250)
+})
+
+reactlinks.addEventListener('mouseover', () => {
+    reactlinkshover.style.height = '65%'
+    reactlinkshover.style.opacity = '1'
+    setTimeout(()=> {
+        RLhoverContent.style.display = 'flex'
+    },250)
+})
+reactlinks.addEventListener('mouseleave', () => {
+    reactlinkshover.style.height = '0'
+    reactlinkshover.style.opacity = '0'
+    setTimeout(()=> {
+        RLhoverContent.style.display = 'none'
+    },250)
+})
+function mlref() {
+    window.open('https://github.com/vittoopugliese/MyLinks')
+}
+function nfref() {
+    window.open('https://nftorio.vittoriopugliese.com/')
+}
+function rmlref() {
+    window.open('https://github.com/vittoopugliese/react-linktree')
+}
