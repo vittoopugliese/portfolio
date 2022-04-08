@@ -185,25 +185,7 @@ a:-webkit-any-link {
   z-index: 1 !important;
 }
 #bg::after {
-  background-image: -moz-linear-gradient(
-      top,
-      rgba(25, 24, 32, 0.9),
-      rgba(23, 24, 32, 0.9)
-    ),
-    url(files/bg-code.webp);
   background-image: -webkit-linear-gradient(
-      top,
-      rgba(25, 24, 32, 0.9),
-      rgba(23, 24, 32, 0.9)
-    ),
-    url(files/bg-code.webp);
-  background-image: -ms-linear-gradient(
-      top,
-      rgba(25, 24, 32, 0.9),
-      rgba(23, 24, 32, 0.9)
-    ),
-    url(files/bg-code.webp);
-  background-image: linear-gradient(
       top,
       rgba(25, 24, 32, 0.9),
       rgba(23, 24, 32, 0.9)
@@ -216,6 +198,8 @@ a:-webkit-any-link {
   position: absolute;
   width: 100%;
   z-index: -100;
+  background-attachment: fixed;
+  transition:height 0.9s;
 }
 .vp {
   color: var(--grey);
@@ -225,12 +209,11 @@ a:-webkit-any-link {
   font-family: "Rubik", sans-serif;
   font-weight: 800;
   padding: 0px 3px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 .vp:hover {
   color: var(--grey);
   background-color: aliceblue;
-  transition: color 0.5s ease-in-out, color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 .vp:not(hover) {
   color: var(--secondary);
@@ -263,6 +246,7 @@ a:-webkit-any-link {
   -webkit-user-select: none;
   -moz-user-select: -moz-none;
   filter: drop-shadow(0px 0px 25px rgba(138, 137, 122, 0.329));
+
 }
 #centered-container {
   display: flex;
