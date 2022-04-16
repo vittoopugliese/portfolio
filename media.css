@@ -51,6 +51,10 @@
     margin: 0px auto;
     margin-bottom: 25px;
   }
+  #selectLanguage{
+    top:  10px;
+    left: 12%;
+  }
 }
 @media (max-width: 1275px) {
   #nav-links ul {
@@ -69,6 +73,10 @@
   }
   #certificate-grid {
     width: 60vw;
+  }
+  #selectLanguage{
+    top: 10px;
+    left: 14%;
   }
 }
 
@@ -132,6 +140,10 @@
   #MyHeader {
     width: 100%;
     margin-bottom: 25px;
+  }
+  #selectLanguage{
+    top: 8px;
+    left: 120px;
   }
 }
 

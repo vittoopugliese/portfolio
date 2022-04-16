@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="media.css">
     <title>Vittorio | Web Developer</title>
 </head>
-<body>
+<body id="body">
     <div id="preloader">
         <div id="loader"></div>
-        <h5>Vittorio Pugliese<br>Front-End Developer</h5>
+        <h5><span style="font-size: 32px;font-weight: bold;">- Vittorio Pugliese -</span><br>Front-End Developer</h5>
         <h3 id="points">Loading</h3>
     </div>
 <div id="wrapper">
@@ -33,6 +33,7 @@
                             <span class="bar"></span>
                             <span class="bar"></span>
                         </div>
+                        <div id="selectLanguage" onclick="selectLanguageButton()"></div>
                         <div id="nav-links">
                             <ul>
                                 <li><a href="#Projects">Projects</a></li>
@@ -40,12 +41,37 @@
                                 <li><a href="#Certificates">Certificates</a></li>
                                 <li><a href="#About">About me</a></li>
                                 <li><a href="#Contact">Contact</a></li>
-                                <li><a style="padding: 5px;" href="files/Vittorio Pugliese CV.pdf" download="Vittorio Pugliese CV" target="_blank" rel="noopener noreferrer"><button id="cv-button"><img src="files/svgs/pdf.png" draggable="false"></img><h1>CV</h1></button></a></li>
+                                <li><a style="padding: 5px;" href="files/Vittorio Pugliese CV.pdf" download="Vittorio Pugliese CV" target="_blank" rel="noopener noreferrer"><button id="cv-button"><img src="files/svgs/pdf.png" draggable="false"></img><h1>Download CV</h1></button></a></li>
                             </ul>
                         </div>
                 </div>
             </nav>
- 
+<!-- lenguich -->
+<div id="setIdiom">
+    <div id="idiomaWr">
+        <div id="idioma">
+            <h2>- Select Language -</h2>
+            <div id="flags">
+                
+                <div id="en">
+                    <img class="banderita" draggable="false" src="files/svgs/USA.png" alt="english flag language">
+                    <h3>English</h3>
+                </div>
+                
+                <div id="es">
+                    <img class="banderita" draggable="false" src="files/svgs/ARG.png" alt="spanish flag language">
+                    <h3>Spanish</h3>
+                </div>
+                
+                <div id="br">
+                    <img class="banderita" draggable="false" src="files/svgs/BRS.png" alt="portugues flag language">
+                    <h3>WrkInPs</h3>
+                </div>
+            </div>
+            <h5>Note: touch the flag icon in the navbar to change page language.</h5>
+        </div>
+    </div>
+</div>
 <!-- Info -->
         <div id="bg"></div>
         <div id="landing-wrapper">
@@ -68,7 +94,7 @@
         
 <!-- Projects -->
         <section id="Projects">
-            <div style="display: flex;"><h4>- Projects -</h4></div>
+            <div class="sticke" style="display: flex;"><h4>- Projects -</h4></div>
                 <div id="slider">     
                     <div id="tabs">
                         <img id="mylinksTab" src="files/projects/mltab.png" draggable="false">
@@ -76,6 +102,9 @@
                         <img id="reactlinksTab" src="files/projects/ltab.png" draggable="false">
                     </div>
 
+
+
+                    
                     <div id="mylinks">
                         <img id="ml1" class="images" src="files/projects/mylinks1.webp" draggable="false">
                         <img id="ml2" class="images" src="files/projects/mylinks2.webp" draggable="false">
@@ -129,7 +158,7 @@
         <section id="Knowledge" style="margin-top:15px;"></section>
             <div id="centered-container">
                 <header> 
-                    <div style="display: flex;"><h4>- Knowledge -</h4></div>
+                    <div class="sticke" style="display: flex;"><h4>- Knowledge -</h4></div>
                     <h5 style="font-weight: 100 !important;">
                         These are some of the technologies I am learning and using on my projects. <br>
                         Also, I am familiarized with some Adobe tools that are not here.<br>
@@ -161,7 +190,7 @@
             <!-- logo -->
             <tech-no name="Photoshop" description="Adobe photo editing software." img="files/logos/ps.webp"></tech-no>
             <!-- logo -->
-            <tech-no name="Spark AR" description="Augmented Reality platform that allows you to create AR effects and filters for cameras." img="files/logos/sparkar.webp"></tech-no>
+            <tech-no name="Spark AR" description="Augmented Reality platform to create AR effects and filters for cameras. AKA Instagram filters." img="files/logos/sparkar.webp"></tech-no>
             <!-- logo -->
             <tech-no name="FL Studio" description="''Formerly known as FruityLoops, is a music producer's dream.''" img="files/logos/fl.webp"></tech-no>  
             
@@ -171,7 +200,7 @@
         <div id="bar"></div>
             
             <!-- Certificates -->
-            <div id="centered-container">
+            <div id="centered-container" class="sticke">
                 <h4 style="margin: 8px auto;">- Certificates -</h4>
             </div>
             
@@ -186,7 +215,7 @@
 
         <!-- About me -->
             <div id="centered-container">
-                <h4 style="margin: 8px auto;">- Who Is Vittorio? -</h4>
+                <h4 class="sticke" style="margin: 8px auto;">- Who Is Vittorio? -</h4>
                 <!-- <img id="yo" src="https://avatars.githubusercontent.com/u/90337009?s=400&u=85e19dfa91e0d19e6d3d176be33ea04c78580637&v=4" alt="vittorio profile photo" draggable="false"> -->
                 <header id="MyHeader"> 
                     <h5 style="text-align: left;">My name is Vittorio Pugliese and I am a young man from Buenos Aires who loves to research and learn about computer science by himself. My first steps were around 2012 when I wanted to start making music on my computer. From that moment on, I always wanted to learn and do new things on my own.<br>
