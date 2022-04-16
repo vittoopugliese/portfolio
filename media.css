@@ -333,6 +333,10 @@
     border-radius: 6px;
     cursor: pointer;
   }
+  #selectLanguage{
+    top: 8px;
+    left: 140px;
+  }
 }
 @media (max-width: 340px) {
   h2 {
