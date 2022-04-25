@@ -143,32 +143,6 @@ a:-webkit-any-link {
 #toggle-button:hover .bar {
   background-color: var(--secondary);
 }
-.arrow {
-  bottom: 2px;
-  display: block;
-  height: 5em;
-  left: 50%;
-  margin: 0 0 0 -5em;
-  position: absolute;
-  white-space: nowrap;
-  width: 10em;
-  z-index: 1;
-}
-.arrow:before {
-  background-image: url("files/svgs/arrow.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  display: block;
-  height: 1.5em;
-  left: 50%;
-  margin: -0.75em 0 0 -1em;
-  position: absolute;
-  top: 50%;
-  width: 2em;
-  z-index: 1;
-}
 #bg {
   z-index: 1 !important;
 }
@@ -220,6 +194,8 @@ a:-webkit-any-link {
   perspective: 10px;
 }
 #info-content {
+  position: relative;
+  left: 200px;
   display: flex;
   justify-content: center;
   flex-wrap: column;
@@ -230,6 +206,7 @@ a:-webkit-any-link {
   padding: 40px;
   vertical-align: middle;
   border: 1px solid rgba(255, 255, 255, 0.034);
+  transition: all 1.7s;
 }
 #image {
   margin-top: 38px;

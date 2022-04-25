@@ -73,7 +73,6 @@ if (localStorage.getItem("language") == "en") {
       <br>Currently learning Front-End with React.</h3>
   </header>
   <span id="image"><img src="files/avatar.png" alt="Avatar" draggable="false"></span>
-  <a class="arrow" href="#Projects"></a>
 </section>
 </div>
 
@@ -280,7 +279,6 @@ if (localStorage.getItem("language") == "es") {
             <h3>Apasionado del desarrollo web y la innovación.<br>Ambicioso, aventurero y motivado por el arte, el orden y el trabajo.<br> Actualmente estoy aprendiendo Front-End con React.</h3>
         </header>
         <span id="image"><img src="files/avatar.png" alt="Avatar" draggable="false"></span>
-        <a class="arrow" href="#Projects"></a>
     </section>
     </div>
     
@@ -1019,3 +1017,13 @@ setTimeout(() => {
 function nfref() {
   window.open("https://nftorio.vittoriopugliese.com/");
 }
+
+
+// avatar reload
+const avatarModal = document.getElementById('info-content');
+
+window.onload = function() { 
+  avatarModal.style.left = '0px'
+  avatarModal.style.overflow = 'hidden'
+};
+
