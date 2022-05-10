@@ -19,16 +19,16 @@ function reloadInMyLanguage() {
 }
 
 function selectLanguageButton() {
-    window.scrollTo(0, 0);
-    localStorage.removeItem('language')
-    setTimeout(() => {
-        location.reload();
-    }, 150);
+  window.scrollTo(0, 0);
+  localStorage.removeItem("language");
+  setTimeout(() => {
+    location.reload();
+  }, 150);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   en.addEventListener("click", () => {
-   localStorage.setItem("language", "en");
+    localStorage.setItem("language", "en");
     reloadInMyLanguage();
   });
   es.addEventListener("click", () => {
@@ -239,10 +239,9 @@ if (localStorage.getItem("language") == "en") {
 </div>
 </div>
     `;
-    const selectLanguage = document.getElementById("selectLanguage");
-    body.style.overflow = "auto"
-    selectLanguage.style.backgroundImage = 'url(files/svgs/USA.png)'
-  
+  const selectLanguage = document.getElementById("selectLanguage");
+  body.style.overflow = "auto";
+  selectLanguage.style.backgroundImage = "url(files/svgs/USA.png)";
 }
 
 // espanich
@@ -440,10 +439,9 @@ if (localStorage.getItem("language") == "es") {
     </div>
     </div>
     `;
-    const selectLanguage = document.getElementById("selectLanguage");
-    body.style.overflow = "auto"
-    selectLanguage.style.backgroundImage = 'url(files/svgs/ARG.png)'
-  
+  const selectLanguage = document.getElementById("selectLanguage");
+  body.style.overflow = "auto";
+  selectLanguage.style.backgroundImage = "url(files/svgs/ARG.png)";
 }
 
 //reload to 0:0
@@ -795,6 +793,9 @@ mylinksTab.addEventListener("click", () => {
   });
 });
 nftorioTab.addEventListener("click", () => {
+  adorno()
+});
+function adorno() {
   nf1.style.opacity = "1";
   nf1.style.display = "flex";
   nf2.style.display = "none";
@@ -863,7 +864,7 @@ nftorioTab.addEventListener("click", () => {
       nf4.style.display = "flex";
     }, 300);
   });
-});
+}
 reactlinksTab.addEventListener("click", () => {
   nf1.style.display = "flex";
   nf2.style.display = "none";
@@ -909,7 +910,7 @@ reactlinksTab.addEventListener("click", () => {
       rml4.style.display = "none";
     }, 300);
   });
-  gallery3.addEventListener("click", () => {
+  gallery3.addEventListener("click", autoClickNftorio)
     rml1.style.opacity = "0";
     rml2.style.opacity = "0";
     rml3.style.opacity = "1";
@@ -920,7 +921,7 @@ reactlinksTab.addEventListener("click", () => {
       rml3.style.display = "flex";
       rml4.style.display = "none";
     }, 300);
-  });
+  })
   gallery4.addEventListener("click", () => {
     rml1.style.opacity = "0";
     rml2.style.opacity = "0";
@@ -933,7 +934,7 @@ reactlinksTab.addEventListener("click", () => {
       rml4.style.display = "flex";
     }, 300);
   });
-});
+;
 
 MLhoverContent.style.display = "none";
 NFhoverContent.style.display = "none";
@@ -1018,12 +1019,11 @@ function nfref() {
   window.open("https://nftorio.vittoriopugliese.com/");
 }
 
-
 // avatar reload
-const avatarModal = document.getElementById('info-content');
+const avatarModal = document.getElementById("info-content");
 
-window.onload = function() { 
-  avatarModal.style.left = '0px'
-  avatarModal.style.overflow = 'hidden'
+window.onload = function () {
+  avatarModal.style.left = "0px";
+  avatarModal.style.overflow = "hidden";
+  adorno()
 };
-

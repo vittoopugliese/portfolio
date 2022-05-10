@@ -471,6 +471,10 @@ footer h3 {
   justify-content: center;
 }
 #slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 10px auto;
   background-color: white;
   height: 100%;
@@ -516,12 +520,12 @@ footer h3 {
   background-color: var(--new);
   width: 100%;
   height: 0px;
-  max-height: 202px;
+  max-height: 100%;
   position: absolute;
   bottom: 6px;
   border-radius: 20px;
   opacity: 0;
-  transition: height 0.2s ease-in, opacity 0.2s;
+  transition: all 0.89s;
 
   display: flex;
   justify-content: center;
