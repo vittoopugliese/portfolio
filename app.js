@@ -35,6 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("language", "es");
     reloadInMyLanguage();
   });
+  br.addEventListener("click", () => {
+    localStorage.setItem("language", "br");
+    reloadInMyLanguage();
+  });
 });
 
 // englich
@@ -443,6 +447,204 @@ if (localStorage.getItem("language") == "es") {
   body.style.overflow = "auto";
   selectLanguage.style.backgroundImage = "url(files/svgs/ARG.png)";
 }
+// espanich
+if (localStorage.getItem("language") == "br") {
+  wrapper.innerHTML = `
+    <nav id="nav">
+        <div class="container">
+                <h1 id="nav-name"><a href="index.html">Portfólio</a></h1>
+                <div id="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div id="selectLanguage" onclick="selectLanguageButton()"></div>
+                <div id="nav-links">
+                    <ul>
+                        <li><a href="#Projects">Projetos</a></li>
+                        <li><a href="#Knowledge">Conocimiento</a></li>
+                        <li><a href="#Certificates">Certificados</a></li>
+                        <li><a href="#About">Sobre Mim</a></li>
+                        <li><a href="#Contact">Nome de contato</a></li>
+                        <li><a style="padding: 5px;" href="files/Vittorio Pugliese CV.pdf" download="Vittorio Pugliese CV" target="_blank" rel="noopener noreferrer"><button id="cv-button"><img src="files/svgs/pdf.png" draggable="false"></img><h1>Baixar CV</h1></button></a></li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+    <!-- Info -->
+    <div id="bg"></div>
+    <div id="landing-wrapper">
+    <section id="info-content">
+        <header> 
+            <h2>Olá!<br>Meu nome é <a class="vp">Vittorio</a></h2>
+            <h3>Apasionado pelo desenvolvimento da web e pela inovação.<br>Ambicioso, aventureiro e motivado pela arte, pela ordem e pelo trabalho. <br> Atualmente estou aprendendo Front-End com React.</h3>
+        </header>
+        <span id="image"><img src="files/avatar.png" alt="Avatar" draggable="false"></span>
+    </section>
+    </div>
+    
+    <!-- Content-wrapper -->
+    <div id="content-wrapper"> 
+    <div id="center-wrapper">
+    
+    <!-- Projects -->
+    <section id="Proyectos">
+    <div class="sticke" style="display: flex;"><h4>- Projetos -</h4></div>
+        <div id="slider">     
+            <div id="tabs">
+                <img id="mylinksTab" src="files/projects/mltab.png" draggable="false">
+                <img id="nftorioTab" src="files/projects/nftab.png" draggable="false">
+                <img id="reactlinksTab" src="files/projects/ltab.png" draggable="false">
+            </div>
+    
+            <div id="mylinks">
+                <img id="ml1" class="images" src="files/projects/mylinks1.webp" draggable="false">
+                <img id="ml2" class="images" src="files/projects/mylinks2.webp" draggable="false">
+                <img id="ml3" class="images" src="files/projects/mylinks3.webp" draggable="false">
+                <img id="ml4" class="images" src="files/projects/mylinks4.webp" draggable="false">
+                <div id="mylinkshover">
+                    <div id="MLhoverContent">
+                        <h6>MyLinks</h6>
+                        <p class="phover">Árvore de links feita com JavaScript e Firebase.</p>
+                        <a href="https://github.com/vittoopugliese/MyLinks" target="_blank"><img class="iconhover" src="files/svgs/gitlleno.svg"></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="nftorio">
+                <img id="nf1" class="images" src="files/projects/nftorio1.png" onclick="nfref()" draggable="false">
+                <img id="nf2" class="images" src="files/projects/nftorio2.png" onclick="nfref()" draggable="false">
+                <img id="nf3" class="images" src="files/projects/nftorio3.png" onclick="nfref()" draggable="false">
+                <img id="nf4" class="images" src="files/projects/nftorio4.png" onclick="nfref()" draggable="false">
+                <div id="nftoriohover">
+                    <div id="NFhoverContent">
+                        <a href="https://nftorio.vittoriopugliese.com/" target="_blank"><img id="nfhover" src="files/projects/nftab.png"></a>
+                        <p class="phover">Este projeto é meu próprio mercado NFT.<br>Estou construindo toda a UI/UX, então vou envelhecer <br>e implementar pagamentos com Metamask.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="reactlinks">
+                <img id="rml1" class="images" src="files/projects/linktree1.png"  draggable="false">
+                <img id="rml2" class="images" src="files/projects/linktree2.png"  draggable="false">
+                <img id="rml3" class="images" src="files/projects/linktree3.png"  draggable="false">
+                <img id="rml4" class="images" src="files/projects/linktree4.png"  draggable="false">
+                <div id="reactlinkshover">
+                    <div id="RLhoverContent">
+                        <h6>MyLinks</h6>
+                        <p class="phover">Árvore de links feita com React.js e Firebase</p>
+                        <a href="https://github.com/vittoopugliese/react-linktree" target="_blank"><img class="iconhover" src="files/svgs/gitlleno.svg"></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="buttoms">
+                <span id="gallery1">1</span>
+                <span id="gallery2">2</span>
+                <span id="gallery3">3</span>
+                <span id="gallery4">4</span>
+            </div>
+        </div>
+    </section>
+    <!-- Knowledge -->
+    <section id="Knowledge" style="margin-top:15px;"></section>
+    <div id="centered-container">
+        <header> 
+            <div class="sticke" style="display: flex;"><h4>- Conocimiento -</h4></div>
+            <h5 style="font-weight: 100 !important;">
+            Estas são algumas das tecnologias que estão aprendendo e usando em seus projetos. <br>
+            Também estou ciente de algumas ferramentas adobe que eles não são mostrados aqui..<br>
+            </h5>
+            
+        </header>
+    </div>
+    
+    <div id="malas">
+    <section id="grid-logo">
+    <!-- logo -->
+    <tech-no name="HTML" description="Linguagem de marcação de hipertexto, dá estrutura à página. Funciona com 'Etiquetas'." img="files/logos/html.webp"></tech-no>
+    <!-- logo -->
+    <tech-no name="CSS" description="Responsável por dar <i>Estilos</i> à página. Funciona com aulas." img="files/logos/css.webp"></tech-no>
+    <!-- logo -->
+    <tech-no name="JavaScript" description="Linguagem de programação que permite dar lógica a uma página web, também pode ser utilizada no lado do servidor." img="files/logos/js.webp"></tech-no>
+    <!-- logo -->
+    <tech-no name="Git" description="Ferramenta de administração. Ele é usado para controlar as versões do código." img="files/logos/git.webp"></tech-no>
+    <!-- logo -->
+    <tech-no name="Bootstrap" description="Front-End Framework usado para estilizar uma página usando classes." img="files/logos/bootstrap.webp"></tech-no>
+    <!-- logo -->
+    <tech-no name="React JS" description="Biblioteca JavaScript usada para construir interfaces de usuário." img="files/logos/react.webp"></tech-no>
+    <!-- logo -->
+    <tech-no name="Firebase" description="Software dedicado ao desenvolvimento de aplicativos. Bancos de dados, registro de usuários e muito mais." img="files/logos/firebase.webp"></tech-no>
+    <!-- logo -->
+    <tech-no name="TailWind" description="Estrutura CSS para construir interfaces de usuário e estilizar a página" img="files/logos/tailwind.webp"></tech-no>
+    <!-- logo -->
+    <tech-no name="Node JS" description="Permite usar JavaScript no servidor" img="files/logos/nodejs.webp"></tech-no>
+    <!-- logo -->
+    <tech-no name="Photoshop" description="Software de edição de fotos desenvolvido pela Adobe" img="files/logos/ps.webp"></tech-no>
+    <!-- logo -->
+    <tech-no name="Spark AR" description="Plataforma desenvolvida pelo Facebook para construir efeitos em Realidade Aumentada" img="files/logos/sparkar.webp"></tech-no>
+    <!-- logo -->
+    <tech-no name="FL Studio" description="''Formerly known as FruityLoops, is a music producer's dream.''" img="files/logos/fl.webp"></tech-no>  
+    
+    </section>
+    </div>
+    <section id="Certificates">
+    <div id="bar"></div>
+    
+    <!-- Certificates -->
+    <div id="centered-container" class="sticke">
+        <h4 style="margin: 8px auto;">- Certificados -</h4>
+    </div>
+    
+    <div id="certificate-grid"></div>
+    
+    <h3 class="more" onclick="loadMoreCertificates()" id="load-more"  style="display: flex;font-style: italic;">mais..</h3>
+    <h3 class="more" onclick="undo()" id="undo" style="display: none;font-style: italic;">menos..</h3>
+    </section>
+    
+    <section id="About">
+    <div id="bar"></div>
+    
+    <!-- About me -->
+    <div id="centered-container">
+        <h4 class="sticke" style="margin: 8px auto;">- Quien es Vittorio? -</h4>
+        <img id="yo" src="https://avatars.githubusercontent.com/u/90337009?s=400&u=85e19dfa91e0d19e6d3d176be33ea04c78580637&v=4" alt="vittorio profile photo" draggable="false">
+        <header id="MyHeader"> 
+            <h5 style="text-align: left;">Meu nome é Vittorio Pugliese e um jovem de Buenos Aires que encanta investigar e aprender informática por sí mismo. Mis primeros pasos fueron alrededor de 2012 cuando quería comezar a hacer music in my computera. A partir deste momento, siempre quise aprender y hacer cosas nuevas por mi cuenta.<br>
+            <br>
+            O primer contato que tuve com a programação fue em 2019, no último ano de segundo grau estamos aprendendo Pseudocódigo, mas não fue hasta os últimos meses de 2020 que começou a aprender JavaScript.<br>
+            Neste momento temos um conhecimento sólido em JavaScript, agora estou aprendendo React.js para construir sites web escalonáveis ​​e fazer projetos maiores.<br>
+            <br>
+            Soy una persona que aprende com facilidade y no tiene miedo de preguntar si está fazendo algo mal. O passo seguinte que você quer aprender Next.js para começar a desencorajar sites profissionais e escalables.</h5>
+        </header>
+    </div>
+    </section>
+    
+    </div>
+    <!-- Footer -->
+    <section id="Contact">
+    <footer>
+        <div id="more-info">
+            <h5>Sinta-se livre de contactar-me!</h5>
+        </div>
+        <div id="contact">
+            <a class="link-to" target="_blank" href="https://www.linkedin.com/in/vittorio-pugliese-920996231/"><img id="iso-1" src="files/svgs/livacio.svg" alt="linkedin profile"></a>
+            <a class="link-to" target="_blank" href="https://github.com/vittoopugliese"><img id="iso-2" src="files/svgs/gitvacio.svg" alt="github profile"></a>
+            <a class="link-to" target="_blank" href="https://www.google.com/search?q=mailto+doesnt+work%2C+my+mail+is+vittoopugliese%40gmail.com&client=ms-android-samsung&sxsrf=APq-WBu6-xbw_QbVwWjeNBF5G3m11kMVyw%3A1647053526339&ei=1gosYpKjFMTN1sQPla2S0AU&ved=0ahUKEwiS5vPCyL_2AhXEppUCHZWWBFoQ4dUDCA4&uact=5&oq=mailto+doesnt+work%2C+my+mail+is+vittoopugliese%40gmail.com&gs_lcp=Cgdnd3Mtd2l6EAM6BwgjELADECc6BAghEApKBAhBGAFKBAhGGABQuxxYhDFg91loAnAAeACAAXGIAdQDkgEDMi4zmAEAoAEByAEBwAEB&sclient=gws-wiz"><img id="iso-3" src="files/svgs/gmailvacio.svg" alt="mailto"></a>
+            <a class="link-to" target="_blank" href="https://api.whatsapp.com/send/?phone=+541178310432"><img id="iso-4" src="files/svgs/wspvacio.svg" alt="whatsapp number"></a>
+        </div>
+        <h3><i>página web feita por <a target="_blank" href="https://instagram.com/vittoopugliese">Vittorio Pugliese</a> com javascript puro</i></h3>
+    </footer>
+    </section>
+    <!-- End -->
+    </div>
+    </div>
+    `;
+  const selectLanguage = document.getElementById("selectLanguage");
+  body.style.overflow = "auto";
+  selectLanguage.style.backgroundImage = "url(files/svgs/BRS.png)";
+}
 
 //reload to 0:0
 window.onbeforeunload = function () {
@@ -793,7 +995,7 @@ mylinksTab.addEventListener("click", () => {
   });
 });
 nftorioTab.addEventListener("click", () => {
-  adorno()
+  adorno();
 });
 function adorno() {
   nf1.style.opacity = "1";
@@ -910,32 +1112,30 @@ reactlinksTab.addEventListener("click", () => {
       rml4.style.display = "none";
     }, 300);
   });
-  gallery3.addEventListener("click", autoClickNftorio)
-    rml1.style.opacity = "0";
-    rml2.style.opacity = "0";
-    rml3.style.opacity = "1";
-    rml4.style.opacity = "0";
-    setTimeout(() => {
-      rml1.style.display = "none";
-      rml2.style.display = "none";
-      rml3.style.display = "flex";
-      rml4.style.display = "none";
-    }, 300);
-  })
-  gallery4.addEventListener("click", () => {
-    rml1.style.opacity = "0";
-    rml2.style.opacity = "0";
-    rml3.style.opacity = "0";
-    rml4.style.opacity = "1";
-    setTimeout(() => {
-      rml1.style.display = "none";
-      rml2.style.display = "none";
-      rml3.style.display = "none";
-      rml4.style.display = "flex";
-    }, 300);
-  });
-;
-
+  gallery3.addEventListener("click", autoClickNftorio);
+  rml1.style.opacity = "0";
+  rml2.style.opacity = "0";
+  rml3.style.opacity = "1";
+  rml4.style.opacity = "0";
+  setTimeout(() => {
+    rml1.style.display = "none";
+    rml2.style.display = "none";
+    rml3.style.display = "flex";
+    rml4.style.display = "none";
+  }, 300);
+});
+gallery4.addEventListener("click", () => {
+  rml1.style.opacity = "0";
+  rml2.style.opacity = "0";
+  rml3.style.opacity = "0";
+  rml4.style.opacity = "1";
+  setTimeout(() => {
+    rml1.style.display = "none";
+    rml2.style.display = "none";
+    rml3.style.display = "none";
+    rml4.style.display = "flex";
+  }, 300);
+});
 MLhoverContent.style.display = "none";
 NFhoverContent.style.display = "none";
 RLhoverContent.style.display = "none";
@@ -1025,5 +1225,5 @@ const avatarModal = document.getElementById("info-content");
 window.onload = function () {
   avatarModal.style.left = "0px";
   avatarModal.style.overflow = "hidden";
-  adorno()
+  adorno();
 };
