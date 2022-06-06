@@ -290,7 +290,7 @@ if (localStorage.getItem("language") == "es") {
     <div id="center-wrapper">
     
     <!-- Projects -->
-    <section id="Proyectos">
+    <section id="Projects">
     <div class="sticke" style="display: flex;"><h4>- Proyectos -</h4></div>
         <div id="slider">     
             <div id="tabs">
@@ -489,7 +489,7 @@ if (localStorage.getItem("language") == "br") {
     <div id="center-wrapper">
     
     <!-- Projects -->
-    <section id="Proyectos">
+    <section id="Projects">
     <div class="sticke" style="display: flex;"><h4>- Projetos -</h4></div>
         <div id="slider">     
             <div id="tabs">
