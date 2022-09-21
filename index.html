@@ -1,252 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!-- meta -->
-    <meta property="og:site_name" content="Vittorio | Frontend Developer"/>
+    <meta property="og:site_name" content="Vittorio | Frontend Developer" />
     <meta property="og:title" content="Vittorio | Web Developer" />
-    <meta property="og:description" content="Front-End developer Vittorio Pugliese - Portfolio"/>
-    <meta property="og:image" content="https://raw.githubusercontent.com/vittoopugliese/portfolio/main/files/thumbnail.webp" />
+    <meta property="og:description" content="Front-End developer Vittorio Pugliese - Portfolio" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/vittoopugliese/portfolio/main/files/thumbnail.webp" />
     <meta property="og:url" content="https://vittoriopugliese.com/" />
     <meta property="og:type" content="website" />
     <!-- meta -->
-    <link rel="shortcut icon" href="files/avatar.png"/>
+    <link rel="shortcut icon" href="files/avatar.png" />
     <link rel="stylesheet" href="estyles.css">
     <link rel="stylesheet" href="media.css">
     <title>Vittorio | Web Developer</title>
 </head>
+
 <body id="body">
     <div id="preloader">
         <div id="loader"></div>
         <h5><span style="font-size: 32px;font-weight: bold;">- Vittorio Pugliese -</span><br>Front-End Developer</h5>
         <h3 id="points">Loading</h3>
     </div>
-<div id="wrapper">
-<!-- Nav -->
-            <nav id="nav">
-                <div class="container">
-                        <h1 id="nav-name"><a href="index.html">Portfolio</a></h1>
-                        <div id="toggle-button">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                        <div id="selectLanguage" onclick="selectLanguageButton()"></div>
-                        <div id="nav-links">
-                            <ul>
-                                <li><a href="#Projects">Projects</a></li>
-                                <li><a href="#Knowledge">Knowledge</a></li>
-                                <li><a href="#Certificates">Certificates</a></li>
-                                <li><a href="#About">About me</a></li>
-                                <li><a href="#Contact">Contact</a></li>
-                                <li><a style="padding: 5px;" href="files/Vittorio Pugliese CV.pdf" download="Vittorio Pugliese CV" target="_blank" rel="noopener noreferrer"><button id="cv-button"><img src="files/svgs/pdf.png" draggable="false"></img><h1>Download CV</h1></button></a></li>
-                            </ul>
-                        </div>
+    <div id="wrapper">
+        <!-- Nav -->
+        <nav id="nav">
+            <div class="container">
+                <h1 id="nav-name"><a href="index.html">Portfolio</a></h1>
+                <div id="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
-            </nav>
-<!-- lenguich -->
-<div id="setIdiom">
-    <div id="idiomaWr">
-        <div id="idioma">
-            <h2>- Select Language -</h2>
-            <div id="flags">
-                
-                <div id="en">
-                    <img class="banderita" draggable="false" src="files/svgs/USA.png" alt="english flag language">
-                    <h3>English</h3>
-                </div>
-                
-                <div id="es">
-                    <img class="banderita" draggable="false" src="files/svgs/ARG.png" alt="spanish flag language">
-                    <h3>Spanish</h3>
-                </div>
-                
-                <div id="br">
-                    <img class="banderita" draggable="false" src="files/svgs/BRS.png" alt="portugues flag language">
-                    <h3>Português</h3>
+                <div id="selectLanguage" onclick="selectLanguageButton()"></div>
+                <div id="nav-links">
+                    <ul>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Knowledge">Knowledge</a></li>
+                        <li><a href="#Certificates">Certificates</a></li>
+                        <li><a href="#About">About me</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                        <li><a style="padding: 5px;" href="files/Vittorio Pugliese CV.pdf"
+                                download="Vittorio Pugliese CV" target="_blank" rel="noopener noreferrer"><button
+                                    id="cv-button"><img src="files/svgs/pdf.png" draggable="false"></img>
+                                    <h1>Download CV</h1>
+                                </button></a></li>
+                    </ul>
                 </div>
             </div>
-            <h5>Note: touch the flag icon in the navbar to change page language.</h5>
+        </nav>
+        <!-- lenguich -->
+        <div id="setIdiom">
+            <div id="idiomaWr">
+                <div id="idioma">
+                    <h2>- Select Language -</h2>
+                    <div id="flags">
+
+                        <div id="en">
+                            <img class="banderita" draggable="false" src="files/svgs/USA.png"
+                                alt="english flag language">
+                            <h3>English</h3>
+                        </div>
+
+                        <div id="es">
+                            <img class="banderita" draggable="false" src="files/svgs/ARG.png"
+                                alt="spanish flag language">
+                            <h3>Spanish</h3>
+                        </div>
+
+                        <div id="br">
+                            <img class="banderita" draggable="false" src="files/svgs/BRS.png"
+                                alt="portugues flag language">
+                            <h3>Português</h3>
+                        </div>
+                    </div>
+                    <h5>Note: touch the flag icon in the navbar to change page language.</h5>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<!-- Info -->
+        <!-- Info -->
         <div id="bg"></div>
         <div id="landing-wrapper">
-			<section id="info-content">
-				<header> 
-					<h2>Hola!<br>My name is <a class="vp">Vittorio</a></h2>
-					<h3>Web development and innovation passionate.
-                    <br>Ambitious, adventurer and  motivated <br>by art, order & work               
-                    <br>Currently learning Front-End with React.</h3>
-				</header>
-				<span id="image"><img src="files/avatar.png" alt="Avatar" draggable="false"></span>
-			</section>
-        </div>
-        
-<!-- Content-wrapper -->
-<div id="content-wrapper"> 
-    <div id="center-wrapper">
-
-<!-- Projects -->
-        <section id="Projects">
-            <div class="sticke" style="display: flex;"><h4>- Projects -</h4></div>
-                <div id="slider">     
-                    <div id="tabs">
-                        <img id="mylinksTab" src="files/projects/mltab.png" draggable="false">
-                        <img id="nftorioTab" src="files/projects/nftab.png" draggable="false">
-                        <img id="reactlinksTab" src="files/projects/ltab.png" draggable="false">
-                    </div>
-
-
-
-                    
-                    <div id="mylinks">
-                        <img id="ml1" class="images" src="files/projects/mylinks1.webp" draggable="false">
-                        <img id="ml2" class="images" src="files/projects/mylinks2.webp" draggable="false">
-                        <img id="ml3" class="images" src="files/projects/mylinks3.webp" draggable="false">
-                        <img id="ml4" class="images" src="files/projects/mylinks4.webp" draggable="false">
-                        <div id="mylinkshover">
-                            <div id="MLhoverContent">
-                                <h6>MyLinks</h6>
-                                <p class="phover">Link tree made with pure JS and Firebase</p>
-                                <a href="https://github.com/vittoopugliese/MyLinks" target="_blank"><img class="iconhover" src="files/svgs/gitlleno.svg"></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="nftorio">
-                        <img id="nf1" class="images" src="files/projects/nftorio1.png" onclick="nfref()" draggable="false">
-                        <img id="nf2" class="images" src="files/projects/nftorio2.png" onclick="nfref()" draggable="false">
-                        <img id="nf3" class="images" src="files/projects/nftorio3.png" onclick="nfref()" draggable="false">
-                        <img id="nf4" class="images" src="files/projects/nftorio4.png" onclick="nfref()" draggable="false">
-                        <div id="nftoriohover">
-                            <div id="NFhoverContent">
-                                <a href="https://nftorio.vittoriopugliese.com/" target="_blank"><img id="nfhover" src="files/projects/nftab.png"></a>
-                                <p class="phover">This project is my own NFTs marketplace.<br>I'm building the entire UI/UX and then I will mint<br>and implement Metamask payments.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="reactlinks">
-                        <img id="rml1" class="images" src="files/projects/linktree1.png"  draggable="false">
-                        <img id="rml2" class="images" src="files/projects/linktree2.png"  draggable="false">
-                        <img id="rml3" class="images" src="files/projects/linktree3.png"  draggable="false">
-                        <img id="rml4" class="images" src="files/projects/linktree4.png"  draggable="false">
-                        <div id="reactlinkshover">
-                            <div id="RLhoverContent">
-                                <h6>MyLinks</h6>
-                                <p class="phover">Link tree made with React.js & Firebase</p>
-                                <a href="https://github.com/vittoopugliese/react-linktree" target="_blank"><img class="iconhover" src="files/svgs/gitlleno.svg"></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="buttoms">
-                        <span id="gallery1">1</span>
-                        <span id="gallery2">2</span>
-                        <span id="gallery3">3</span>
-                        <span id="gallery4">4</span>
-                    </div>
-                </div>
-        </section>
-<!-- Knowledge -->
-        <section id="Knowledge" style="margin-top:15px;"></section>
-            <div id="centered-container">
-                <header> 
-                    <div class="sticke" style="display: flex;"><h4>- Knowledge -</h4></div>
-                    <h5 style="font-weight: 100 !important;">
-                        These are some of the technologies I am learning and using on my projects. <br>
-                        Also, I am familiarized with some Adobe tools that are not here.<br>
-                    </h5>
-                    
+            <section id="info-content">
+                <header>
+                    <h2>Hola!<br>My name is <a class="vp">Vittorio</a></h2>
+                    <h3>Web development and innovation passionate.
+                        <br>Ambitious, adventurer and motivated <br>by art, order & work
+                        <br>Currently learning Front-End with React.
+                    </h3>
                 </header>
-            </div>
-        
-        <div id="malas">
-        <section id="grid-logo">
-            <!-- logo -->
-            <tech-no name="HTML" description="Hypertext markup language, it gives structure to the page. This works with 'Tags'." img="files/logos/html.webp"></tech-no>
-            <!-- logo -->
-            <tech-no name="CSS" description="Responsible for giving <i>Style</i> to the page. This works whit classes." img="files/logos/css.webp"></tech-no>
-            <!-- logo -->
-            <tech-no name="JavaScript" description="Programming language that allows you to put logic onto web pages." img="files/logos/js.webp"></tech-no>
-            <!-- logo -->
-            <tech-no name="Git" description="Source code management tool. It's used to control the versions of the page." img="files/logos/git.webp"></tech-no>
-            <!-- logo -->
-            <tech-no name="Bootstrap" description="Front-end framework used to put styles on the page using only css classes." img="files/logos/bootstrap.webp"></tech-no>
-            <!-- logo -->
-            <tech-no name="React JS" description="JavaScript library that's used for building user interfaces." img="files/logos/react.webp"></tech-no>
-            <!-- logo -->
-            <tech-no name="Firebase" description="Application development software. Databases, user registration & more." img="files/logos/firebase.webp"></tech-no>
-            <!-- logo -->
-            <tech-no name="TailWind" description="CSS framework for building custom user interfaces and give style to the page." img="files/logos/tailwind.webp"></tech-no>
-            <!-- logo -->
-            <tech-no name="Node JS" description="A JS runtime environment that allows JS to be run on the server-side." img="files/logos/nodejs.webp"></tech-no>
-            <!-- logo -->
-            <tech-no name="Photoshop" description="Adobe photo editing software." img="files/logos/ps.webp"></tech-no>
-            <!-- logo -->
-            <tech-no name="Spark AR" description="Augmented Reality platform to create AR effects and filters for cameras. AKA Instagram filters." img="files/logos/sparkar.webp"></tech-no>
-            <!-- logo -->
-            <tech-no name="FL Studio" description="''Formerly known as FruityLoops, is a music producer's dream.''" img="files/logos/fl.webp"></tech-no>  
-            
-        </section>
-        </div>
-        <section id="Certificates">
-        <div id="bar"></div>
-            
-            <!-- Certificates -->
-            <div id="centered-container" class="sticke">
-                <h4 style="margin: 8px auto;">- Certificates -</h4>
-            </div>
-            
-            <div id="certificate-grid"></div>
-            
-            <h3 class="more" onclick="loadMoreCertificates()" id="load-more"  style="display: flex;font-style: italic;">Load More...</h3>
-            <h3 class="more" onclick="undo()" id="undo" style="display: none;font-style: italic;">Less</h3>
-        </section>
-        
-        <section id="About">
-        <div id="bar"></div>
-
-        <!-- About me -->
-            <div id="centered-container">
-                <h4 class="sticke" style="margin: 8px auto;">- Who Is Vittorio? -</h4>
-                <!-- <img id="yo" src="https://avatars.githubusercontent.com/u/90337009?s=400&u=85e19dfa91e0d19e6d3d176be33ea04c78580637&v=4" alt="vittorio profile photo" draggable="false"> -->
-                <header id="MyHeader"> 
-                    <h5 style="text-align: left;">My name is Vittorio Pugliese and I am a young man from Buenos Aires who loves to research and learn about computer science by himself. My first steps were around 2012 when I wanted to start making music on my computer. From that moment on, I always wanted to learn and do new things on my own.<br>
-                    <br>
-                    The first contact I had with coding was in 2019, in the last year of high school we were learning Pseudocode, but it wasn't until the last months of 2020 that I started learning JavaScript.<br>
-                    In this moment I have a solid base into pure JS, but now I'm learning React.js to build scalable websites and make bigger projects.<br>
-                    <br>
-                    I am a person who learns easily and is not afraid to ask if I'm doing something wrong.
-                    The next step I want to make is learn Next.js to start deploying professional websites.
-                    </h5>
-                </header>
-            </div>
+                <span id="image"><img src="files/avatar.png" alt="Avatar" draggable="false"></span>
             </section>
-            
         </div>
-        <!-- Footer -->
-        <section id="Contact">
-            <footer>
-                <div id="more-info">
-                    <h5>Feel free to contact me and ask any question you have.</h5>
+
+        <!-- Content-wrapper -->
+        <div id="content-wrapper">
+            <div id="center-wrapper">
+
+                <!-- Projects -->
+                <section id="Projects">
+                    <div class="sticke" style="display: flex;">
+                        <h4>- Projects -</h4>
+                    </div>
+                    <div id="slider">
+                        <div id="tabs">
+                            <img id="mylinksTab" src="files/projects/mltab.png" draggable="false">
+                            <img id="nftorioTab" src="files/projects/nftab.png" draggable="false">
+                            <img id="reactlinksTab" src="files/projects/ltab.png" draggable="false">
+                        </div>
+
+                        <div id="mylinks">
+                            <img id="ml1" class="images" src="files/projects/mylinks1.webp" draggable="false">
+                            <img id="ml2" class="images" src="files/projects/mylinks2.webp" draggable="false">
+                            <img id="ml3" class="images" src="files/projects/mylinks3.webp" draggable="false">
+                            <img id="ml4" class="images" src="files/projects/mylinks4.webp" draggable="false">
+                            <div id="mylinkshover">
+                                <div id="MLhoverContent">
+                                    <h6>MyLinks</h6>
+                                    <p class="phover">Link tree made with pure JS and Firebase</p>
+                                    <a href="https://github.com/vittoopugliese/MyLinks" target="_blank"><img
+                                            class="iconhover" src="files/svgs/gitlleno.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="nftorio">
+                            <img id="nf1" class="images" src="files/projects/nftorio1.png" onclick="nfref()"
+                                draggable="false">
+                            <img id="nf2" class="images" src="files/projects/nftorio2.png" onclick="nfref()"
+                                draggable="false">
+                            <img id="nf3" class="images" src="files/projects/nftorio3.png" onclick="nfref()"
+                                draggable="false">
+                            <img id="nf4" class="images" src="files/projects/nftorio4.png" onclick="nfref()"
+                                draggable="false">
+                            <div id="nftoriohover">
+                                <div id="NFhoverContent">
+                                    <a href="https://nftorio.vittoriopugliese.com/" target="_blank"><img id="nfhover"
+                                            src="files/projects/nftab.png"></a>
+                                    <p class="phover">This project is my own NFTs marketplace.<br>I'm building the
+                                        entire UI/UX and then I will mint<br>and implement Metamask payments.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="reactlinks">
+                            <img id="rml1" class="images" src="files/projects/linktree1.png" draggable="false">
+                            <img id="rml2" class="images" src="files/projects/linktree2.png" draggable="false">
+                            <img id="rml3" class="images" src="files/projects/linktree3.png" draggable="false">
+                            <img id="rml4" class="images" src="files/projects/linktree4.png" draggable="false">
+                            <div id="reactlinkshover">
+                                <div id="RLhoverContent">
+                                    <h6>MyLinks</h6>
+                                    <p class="phover">Link tree made with React.js & Firebase</p>
+                                    <a href="https://github.com/vittoopugliese/react-linktree" target="_blank"><img
+                                            class="iconhover" src="files/svgs/gitlleno.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="buttoms">
+                            <span id="gallery1">1</span>
+                            <span id="gallery2">2</span>
+                            <span id="gallery3">3</span>
+                            <span id="gallery4">4</span>
+                        </div>
+                    </div>
+                </section>
+                <!-- Knowledge -->
+                <section id="Knowledge" style="margin-top:15px;"></section>
+                <div id="centered-container">
+                    <header>
+                        <div class="sticke" style="display: flex;">
+                            <h4>- Knowledge -</h4>
+                        </div>
+                        <h5 style="font-weight: 100 !important;">
+                            These are some of the technologies I am learning and using on my projects. <br>
+                            Also, I am familiarized with some Adobe tools that are not here.<br>
+                        </h5>
+                    </header>
                 </div>
-                <div id="contact">
-                    <a class="link-to" target="_blank" href="https://www.linkedin.com/in/vittorio-pugliese-920996231/"><img id="iso-1" src="files/svgs/livacio.svg" alt="linkedin profile"></a>
-                    <a class="link-to" target="_blank" href="https://github.com/vittoopugliese"><img id="iso-2" src="files/svgs/gitvacio.svg" alt="github profile"></a>
-                    <a class="link-to" target="_blank" href="https://www.google.com/search?q=mailto+doesnt+work%2C+my+mail+is+vittoopugliese%40gmail.com&client=ms-android-samsung&sxsrf=APq-WBu6-xbw_QbVwWjeNBF5G3m11kMVyw%3A1647053526339&ei=1gosYpKjFMTN1sQPla2S0AU&ved=0ahUKEwiS5vPCyL_2AhXEppUCHZWWBFoQ4dUDCA4&uact=5&oq=mailto+doesnt+work%2C+my+mail+is+vittoopugliese%40gmail.com&gs_lcp=Cgdnd3Mtd2l6EAM6BwgjELADECc6BAghEApKBAhBGAFKBAhGGABQuxxYhDFg91loAnAAeACAAXGIAdQDkgEDMi4zmAEAoAEByAEBwAEB&sclient=gws-wiz"><img id="iso-3" src="files/svgs/gmailvacio.svg" alt="mailto"></a>
-                    <a class="link-to" target="_blank" href="https://api.whatsapp.com/send/?phone=+541178310432"><img id="iso-4" src="files/svgs/wspvacio.svg" alt="whatsapp number"></a>
+
+                <div id="malas">
+                    <section id="grid-logo">
+                        <!-- logo -->
+                        <tech-no name="HTML"
+                            description="Hypertext markup language, it gives structure to the page. This works with 'Tags'."
+                            img="files/logos/html.webp"></tech-no>
+                        <!-- logo -->
+                        <tech-no name="CSS"
+                            description="Responsible for giving <i>Style</i> to the page. This works whit classes."
+                            img="files/logos/css.webp"></tech-no>
+                        <!-- logo -->
+                        <tech-no name="JavaScript"
+                            description="Programming language that allows you to put logic onto web pages."
+                            img="files/logos/js.webp"></tech-no>
+                        <!-- logo -->
+                        <tech-no name="Git"
+                            description="Source code management tool. It's used to control the versions of the page."
+                            img="files/logos/git.webp"></tech-no>
+                        <!-- logo -->
+                        <tech-no name="Bootstrap"
+                            description="Front-end framework used to put styles on the page using only css classes."
+                            img="files/logos/bootstrap.webp"></tech-no>
+                        <!-- logo -->
+                        <tech-no name="React JS"
+                            description="JavaScript library that's used for building user interfaces."
+                            img="files/logos/react.webp"></tech-no>
+                        <!-- logo -->
+                        <tech-no name="Firebase"
+                            description="Application development software. Databases, user registration & more."
+                            img="files/logos/firebase.webp"></tech-no>
+                        <!-- logo -->
+                        <tech-no name="TailWind"
+                            description="CSS framework for building custom user interfaces and give style to the page."
+                            img="files/logos/tailwind.webp"></tech-no>
+                        <!-- logo -->
+                        <tech-no name="Node JS"
+                            description="A JS runtime environment that allows JS to be run on the server-side."
+                            img="files/logos/nodejs.webp"></tech-no>
+                        <!-- logo -->
+                        <tech-no name="Photoshop" description="Adobe photo editing software." img="files/logos/ps.webp">
+                        </tech-no>
+                        <!-- logo -->
+                        <tech-no name="Spark AR"
+                            description="Augmented Reality platform to create AR effects and filters for cameras. AKA Instagram filters."
+                            img="files/logos/sparkar.webp"></tech-no>
+                        <!-- logo -->
+                        <tech-no name="FL Studio"
+                            description="''Formerly known as FruityLoops, is a music producer's dream.''"
+                            img="files/logos/fl.webp"></tech-no>
+
+                    </section>
                 </div>
-                <h3><i>Web made by <a target="_blank" href="https://instagram.com/vittoopugliese">Vittorio Pugliese</a> with pure JavaScript.</i></h3>
-            </footer>
-        </section>
-<!-- End -->
+                <section id="Certificates">
+                    <div id="bar"></div>
+
+                    <!-- Certificates -->
+                    <div id="centered-container" class="sticke">
+                        <h4 style="margin: 8px auto;">- Certificates -</h4>
+                    </div>
+
+                    <div id="certificate-grid"></div>
+
+                    <h3 class="more" onclick="loadMoreCertificates()" id="load-more"
+                        style="display: flex;font-style: italic;">Load More...</h3>
+                    <h3 class="more" onclick="undo()" id="undo" style="display: none;font-style: italic;">Less</h3>
+                </section>
+
+                <section id="About">
+                    <div id="bar"></div>
+
+                    <!-- About me -->
+                    <div id="centered-container">
+                        <h4 class="sticke" style="margin: 8px auto;">- Who Is Vittorio? -</h4>
+                        <!-- <img id="yo" src="https://avatars.githubusercontent.com/u/90337009?s=400&u=85e19dfa91e0d19e6d3d176be33ea04c78580637&v=4" alt="vittorio profile photo" draggable="false"> -->
+                        <header id="MyHeader">
+                            <h5 style="text-align: left;">My name is Vittorio Pugliese and I am a young man from Buenos
+                                Aires who loves to research and learn about computer science by himself. My first steps
+                                were around 2012 when I wanted to start making music on my computer. From that moment
+                                on, I always wanted to learn and do new things on my own.<br>
+                                <br>
+                                The first contact I had with coding was in 2019, in the last year of high school we were
+                                learning Pseudocode, but it wasn't until the last months of 2020 that I started learning
+                                JavaScript.<br>
+                                In this moment I have a solid base into pure JS, but now I'm learning React.js to build
+                                scalable websites and make bigger projects.<br>
+                                <br>
+                                I am a person who learns easily and is not afraid to ask if I'm doing something wrong.
+                                The next step I want to make is learn Next.js to start deploying professional websites.
+                            </h5>
+                        </header>
+                    </div>
+                </section>
+
+            </div>
+            <!-- Footer -->
+            <section id="Contact">
+                <footer>
+                    <div id="more-info">
+                        <h5>Feel free to contact me and ask any question you have.</h5>
+                    </div>
+                    <div id="contact">
+                        <a class="link-to" target="_blank"
+                            href="https://www.linkedin.com/in/vittorio-pugliese-920996231/"><img id="iso-1"
+                                src="files/svgs/livacio.svg" alt="linkedin profile"></a>
+                        <a class="link-to" target="_blank" href="https://github.com/vittoopugliese"><img id="iso-2"
+                                src="files/svgs/gitvacio.svg" alt="github profile"></a>
+                        <a class="link-to" target="_blank" href="mailto:vittoopugliese@gmail.com"><img id="iso-3"
+                                src="files/svgs/gmailvacio.svg" alt="mailto"></a>
+                        <a class="link-to" target="_blank"
+                            href="https://api.whatsapp.com/send/?phone=541132606479&text=Hola+Vitto&type=phone_number&app_absent=0"><img
+                                id="iso-4" src="files/svgs/wspvacio.svg" alt="whatsapp number"></a>
+                    </div>
+                    <h3><i>Web made by <a target="_blank" href="https://instagram.com/vittoopugliese">Vittorio
+                                Pugliese</a> with pure JavaScript.</i></h3>
+                </footer>
+            </section>
+            <!-- End -->
+        </div>
     </div>
-</div>
 </body>
 <script src="app.js"></script>
+
 </html>

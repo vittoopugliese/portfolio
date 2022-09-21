@@ -320,6 +320,15 @@ a:-webkit-any-link {
   margin: 5px auto !important;
   cursor: pointer;
   filter: drop-shadow(2px 2px 8px rgba(255, 255, 255, 0.246));
+  transition: 0.74s cubic-bezier(0.23, 1, 0.32, 1);
+}
+#certificate-grid img:hover {
+  z-index: 2000;
+  transform: scale(1.4);
+  filter: drop-shadow(8px 8px 12px rgba(39, 39, 39, 0.333));
+}
+#certificate-grid img:not(:hover) {
+  opacity: 0.8;
 }
 .more {
   display: flex;
@@ -423,7 +432,7 @@ footer {
 }
 .link-to:hover {
   filter: drop-shadow(-2px 2px 9px rgba(189, 189, 189, 0.819));
-  transition: filter 0.25s ease-in, filter 0.25s ease-out;
+  transition: filter 0.3s ease-in, filter 0.3s ease-out;
 }
 #contact {
   text-align: center;
@@ -542,10 +551,8 @@ footer h3 {
   max-height: 100%;
   position: absolute;
   bottom: 6px;
-  border-radius: 20px;
   opacity: 0;
-  transition: all 0.89s;
-
+  transition: all 0.54s;
   display: flex;
   justify-content: center;
   text-align: center;
